@@ -27,9 +27,16 @@ class Home extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                       Center(
+                        child: Image.asset(
+                        "Home/front.png", // Replace with your image asset path
+                        width: 250, // Adjust width as needed
+                        height: 250, // Adjust height as needed
+                        ),
+                      ),
                       Center(
                       child: Image.asset(
-                        "Rainbow.png", // Replace with your image asset path
+                        "Home/Rainbow.png", // Replace with your image asset path
                         width: 250, // Adjust width as needed
                         height: 250, // Adjust height as needed
                         ),
@@ -58,7 +65,7 @@ class Home extends StatelessWidget {
                       ),
                       Center(
                         child: Image.asset(
-                        "pride.png", // Replace with your image asset path
+                        "Home/pride.png", // Replace with your image asset path
                         width: 250, // Adjust width as needed
                         height: 250, // Adjust height as needed
                         ),
@@ -81,15 +88,6 @@ class Home extends StatelessWidget {
                         textAlign: TextAlign.justify,
                       ),
                       const SizedBox(height: 10),
-                      Text(
-                        'Pride Month commemorates years of struggle for civil rights and the ongoing pursuit of equal justice under the law for the lesbian, gay, bisexual, transgender, and queer community, as well as the accomplishments of LGBTQ individuals. But why is Pride Month celebrated in June? The organized pursuit of LGBTQ rights in the United States reaches back to at least 1924 and the founding of the Society of Human Rights in Chicago by Henry Gerber. But the event that catalyzed the LGBTQ rights movement came in June 1969 in New York City’s Greenwich Village, at the Stonewall Inn. In the early morning hours of June 28, police raided this popular gathering place for young members of the LGBTQ community—arresting the employees for selling liquor without a license, roughing up many of the patrons, and clearing the bar. Outside, the crowd that watched the bar’s patrons being herded into police vans became enraged. Previously witnesses to police harassment of members of the LGBTQ community had stood by passively, but this time the crowd jeered the police and threw coins and then bottles and debris at them, forcing the police to barricade themselves in the bar to await backup. Before long some 400 people were rioting. Although police reinforcements dispersed the crowd, riots waxed and waned outside the bar for the next five days, and these Stonewall riots (also called the Stonewall uprising) provided the spark that ignited the LGBTQ rights movement in the United States.',
-                        style: GoogleFonts.poppins(
-                          fontSize: 13,
-                        ),
-                        textAlign: TextAlign.justify,
-                      ),
-
-                      const SizedBox(height: 25),
                       Text(
                         'Pride Organizations',
                         style: GoogleFonts.poppins(

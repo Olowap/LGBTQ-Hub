@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('splash.png'), // Replace with your image asset path
+                image: AssetImage('Splash/splash.png'), // Replace with your image asset path
                 fit: BoxFit.cover,
               ),
             ),
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
           Center(
             child: Image.asset(
-              'HUB.png', // Replace with your image asset path
+              'Splash/HUB.png', // Replace with your image asset path
               width: 800,
               height: 800,
             ),

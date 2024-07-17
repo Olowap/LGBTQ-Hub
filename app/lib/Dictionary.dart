@@ -10,7 +10,7 @@ class Dictionary extends StatelessWidget {
         title: const Text('Dictionary',
         style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
-         backgroundColor: Colors.pink[400],
+         backgroundColor: Color.fromARGB(255, 215, 190, 198),
       ),
     body:const Center(
       child: SingleChildScrollView(
