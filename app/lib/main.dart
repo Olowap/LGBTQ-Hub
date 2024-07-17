@@ -55,7 +55,7 @@ class _BottomNavState extends State<BottomNav> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Icon(Icons.book),
             label: 'Dictionary',
           ),
         ],
