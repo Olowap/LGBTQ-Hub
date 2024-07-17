@@ -47,12 +47,14 @@ class Home extends StatelessWidget {
                         style: GoogleFonts.poppins(
                           fontSize: 19,
                         ),
+                        textAlign: TextAlign.justify,
                       ),
                       Text(
                         'The "plus" represents other sexual identities, including pansexual and Two-Spirit. The first four letters of the acronym have been used since the 1990s, but in recent years there has been an increased awareness of the need to be inclusive of other sexual identities to offer better representation.',
                         style: GoogleFonts.poppins(
                           fontSize: 19,
                         ),
+                        textAlign: TextAlign.justify,
                       ),
                       Center(
                         child: Image.asset(
@@ -76,6 +78,7 @@ class Home extends StatelessWidget {
                         style: GoogleFonts.poppins(
                           fontSize: 19,
                         ),
+                        textAlign: TextAlign.justify,
                       ),
                       const SizedBox(height: 10),
                       Text(
@@ -83,6 +86,7 @@ class Home extends StatelessWidget {
                         style: GoogleFonts.poppins(
                           fontSize: 19,
                         ),
+                        textAlign: TextAlign.justify,
                       ),
                       const SizedBox(height: 10),
                       Text(
@@ -90,7 +94,17 @@ class Home extends StatelessWidget {
                         style: GoogleFonts.poppins(
                           fontSize: 19,
                         ),
+                        textAlign: TextAlign.justify,
                       ),
+                      const SizedBox(height: 25),
+                      Text(
+                        'Pride Organizations',
+                        style: GoogleFonts.poppins(
+                          fontSize: 45,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 25),
                     ],
                   ),
                 ),
