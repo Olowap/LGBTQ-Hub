@@ -6,7 +6,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: Text('Home',
+         style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.pink[400],
       ),
       body: Center(
         child: SingleChildScrollView(
