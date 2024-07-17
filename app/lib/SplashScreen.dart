@@ -11,7 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Simulate a future task, such as loading data or checking for authentication
-    Timer(const Duration(seconds: 15), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacementNamed('/home');
     });
   }
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
       decoration: const BoxDecoration(
       gradient: LinearGradient(
         colors: [
-    Colors.red,
+    Color.fromARGB(191, 244, 67, 54),
     Colors.orange,
     Colors.yellow,
     Colors.green,
