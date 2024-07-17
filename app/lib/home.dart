@@ -18,13 +18,7 @@ class Home extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               const SizedBox(height: 16),
-            Center(
-              child: Image.asset(
-                "Rainbow.png", // Replace with your image asset path
-                width: 250, // Adjust width as needed
-                height: 250, // Adjust height as needed
-              ),
-            ),
+            
               Card(
                 elevation: 2,
                 margin: EdgeInsets.symmetric(vertical: 8),
@@ -33,6 +27,13 @@ class Home extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Center(
+                      child: Image.asset(
+                        "Rainbow.png", // Replace with your image asset path
+                        width: 250, // Adjust width as needed
+                        height: 250, // Adjust height as needed
+                        ),
+                      ),
                       Text(
                         'About LGBTQ',
                         style: GoogleFonts.poppins(
@@ -53,6 +54,14 @@ class Home extends StatelessWidget {
                           fontSize: 19,
                         ),
                       ),
+                      Center(
+                        child: Image.asset(
+                        "pride.png", // Replace with your image asset path
+                        width: 250, // Adjust width as needed
+                        height: 250, // Adjust height as needed
+                        ),
+                      ),
+                      
                       const SizedBox(height: 25),
                       Text(
                         'Why Is Pride Month Celebrated in June?',

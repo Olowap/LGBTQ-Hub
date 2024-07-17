@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:google_fonts/google_fonts.dart';
 
 class Dictionary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dictionary',
+        title: const Text('Dictionary',
         style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
          backgroundColor: Colors.pink[400],
@@ -19,7 +21,7 @@ class Dictionary extends StatelessWidget {
 
              Text(
                       'PRIDE UMBRELLA',
-                      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
                     ),
                     Text(
                       'Get to know more about the LGBTQIA+ community.',
