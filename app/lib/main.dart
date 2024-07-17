@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'splashscreen.dart';
 import 'home.dart';
 import 'dictionary.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-       home: SplashScreen(),
+      home: SplashScreen(),
       routes: {
         '/home': (context) => BottomNav(),
       },
@@ -57,17 +58,18 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.book),
-            label: ' Pride Dictionary',
+            label: 'Pride Dictionary',
           ),
-           BottomNavigationBarItem(
-            icon: Icon(Icons.groups_2),
-            label: ' Info',
+          BottomNavigationBarItem(
+            icon: Icon(Icons.groups),
+            label: 'About',
           ),
-       
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Color.fromARGB(255, 184, 194, 203),
         onTap: _onItemTapped,
+        selectedLabelStyle: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+        unselectedLabelStyle: GoogleFonts.poppins(),
       ),
     );
   }
