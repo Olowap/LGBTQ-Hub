@@ -11,7 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Simulate a future task, such as loading data or checking for authentication
-    Timer(const Duration(seconds: 5), () {
+    Timer(const Duration(seconds: 8), () {
       Navigator.of(context).pushReplacementNamed('/home');
     });
   }
@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           ),
           Container(
-            color: Colors.white.withOpacity(0.5), // Adjust the opacity value as needed
+            color: Colors.white.withOpacity(0.8), // Adjust the opacity value as needed
           ),
           Center(
             child: Image.asset(
@@ -39,6 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 800,
             ),
           ),
+           
         ],
       ),
     );
