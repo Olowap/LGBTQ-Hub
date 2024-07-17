@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'splashscreen.dart';
 import 'home.dart';
 import 'dictionary.dart';
+import 'info.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,9 +31,9 @@ class _BottomNavState extends State<BottomNav> {
   int _selectedIndex = 0;
 
   static List<Widget> _widgetOptions = <Widget>[
-    //SplashScreen(),
     Home(),
     Dictionary(),
+    Info(),
   ];
 
   void _onItemTapped(int index) {
@@ -58,6 +59,11 @@ class _BottomNavState extends State<BottomNav> {
             icon: Icon(Icons.book),
             label: ' Pride Dictionary',
           ),
+           BottomNavigationBarItem(
+            icon: Icon(Icons.groups_2),
+            label: ' Info',
+          ),
+       
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blue,
