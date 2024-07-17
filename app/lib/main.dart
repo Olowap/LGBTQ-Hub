@@ -56,7 +56,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.book),
-            label: 'Dictionary',
+            label: ' Pride Dictionary',
           ),
         ],
         currentIndex: _selectedIndex,
