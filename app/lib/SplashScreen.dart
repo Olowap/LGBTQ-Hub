@@ -11,7 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Simulate a future task, such as loading data or checking for authentication
-    Timer(const Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacementNamed('/home');
     });
   }
@@ -19,29 +19,27 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-      decoration: const BoxDecoration(
-      gradient: LinearGradient(
-        colors: [
-    Color.fromARGB(191, 244, 67, 54),
-    Colors.orange,
-    Colors.yellow,
-    Colors.green,
-    Colors.blue,
-    Colors.indigo,
-    Colors.purple,
-
+      body: Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('splash.png'), // Replace with your image asset path
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.white.withOpacity(0.5), // Adjust the opacity value as needed
+          ),
+          Center(
+            child: Image.asset(
+              'HUB.png', // Replace with your image asset path
+              width: 800,
+              height: 800,
+            ),
+          ),
         ],
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-      ),
-      ),
-      child: Center(
-        child: Image.asset('HUB.png',
-        width: 800,
-        height: 800,
-        ),
-      ),
       ),
     );
   }
