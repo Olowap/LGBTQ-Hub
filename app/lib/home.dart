@@ -5,7 +5,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
+      backgroundColor:
+          Color.fromARGB(255, 250, 250, 250), // Light background color
       appBar: AppBar(
         title: Text(
           'Home',
@@ -52,12 +53,12 @@ class Home extends StatelessWidget {
                   children: [
                     Center(
                       child: Image.asset(
-                      "Home/Rainbow.png", // Replace with your image asset path
-                      width: double.infinity, // Full width
-                      height: 250, // Adjust height as needed
-                      fit: BoxFit.cover,
+                        "Home/Rainbow.png", // Replace with your image asset path
+                        width: double.infinity, // Full width
+                        height: 250, // Adjust height as needed
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
                     Text(
                       'What is LGBTQ?',
                       style: GoogleFonts.poppins(
@@ -106,11 +107,11 @@ class Home extends StatelessWidget {
                 child: Column(
                   children: [
                     Center(
-                    child: Image.asset(
-                    "Home/pride.png", // Replace with your image asset path
-                    width: double.infinity, // Full width
-                    height: 250, // Adjust height as needed
-                    fit: BoxFit.cover,
+                      child: Image.asset(
+                        "Home/pride.png", // Replace with your image asset path
+                        width: double.infinity, // Full width
+                        height: 250, // Adjust height as needed
+                        fit: BoxFit.cover,
                       ),
                     ),
                     const SizedBox(height: 20),
