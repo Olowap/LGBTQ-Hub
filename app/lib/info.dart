@@ -25,25 +25,22 @@ class Info extends StatefulWidget {
 }
 
 class _InfoState extends State<Info> {
-  bool _isExpanded = false;
-  int _selectedDeveloperIndex = -1;
-
   List<Developer> developers = [
     Developer(
       name: 'Joven Catilo',
       age: 21,
       location: 'Pallocan West, Batangas City',
-      contactNumber: '+639123456789',
-      imageUrl: 'assets/developer1.jpg',
+      contactNumber: '+639203549508',
+      imageUrl: 'Info/Joven.jpg',
       bio:
-          'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
+          'A Third Year BS Information Technology Major in Service Management from Batangas State University-TNEU Alangilan Campus. He is passionate in serving the community and charity works. He also play as Middle Blocker in School, Barangay and City tournaments. He always believe that "Everything happens for a reason."',
     ),
     Developer(
       name: 'Rizabel Lingon',
       age: 21,
       location: 'Pallocan West, Batangas City',
       contactNumber: '+639987654321',
-      imageUrl: 'assets/developer2.jpg',
+      imageUrl: 'Info/Joven.jpg',
       bio:
           'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
     ),
@@ -52,25 +49,141 @@ class _InfoState extends State<Info> {
       age: 21,
       location: 'Pallocan West, Batangas City',
       contactNumber: '+639876543210',
-      imageUrl: 'assets/developer3.jpg',
+      imageUrl: 'Info/Joven.jpg',
+      bio:
+          'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
+    ),
+    Developer(
+      name: 'Juan Paolo Martin V. Ramos',
+      age: 21,
+      location: 'Tingga Labac, Batangas City',
+      contactNumber: '+639876543210',
+      imageUrl: 'Info/Joven.jpg',
       bio:
           'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
     ),
   ];
 
-  void _toggleExpand() {
-    setState(() {
-      _isExpanded = !_isExpanded;
-      if (!_isExpanded) {
-        _selectedDeveloperIndex = -1;
-      }
-    });
+  void _showDeveloperDetails(Developer developer) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          contentPadding: EdgeInsets.zero,
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20.0, right: 16.0),
+                    child: Align(
+                      alignment: Alignment.topRight,
+                      child: IconButton(
+                        icon: Icon(Icons.close),
+                        onPressed: () => Navigator.of(context).pop(),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: Center(
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 50,
+                            backgroundColor: Colors.transparent,
+                            child: CircleAvatar(
+                              radius: 48,
+                              backgroundImage: AssetImage(developer.imageUrl),
+                            ),
+                          ),
+                          SizedBox(height: 16),
+                          Text(
+                            developer.name,
+                            style: GoogleFonts.poppins(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 16),
+              _buildDeveloperDetail(
+                icon: Icons.person,
+                text: 'Name: ${developer.name}',
+              ),
+              _buildDeveloperDetail(
+                icon: Icons.cake,
+                text: 'Age: ${developer.age}',
+              ),
+              _buildDeveloperDetail(
+                icon: Icons.location_on,
+                text: 'Location: ${developer.location}',
+              ),
+              _buildDeveloperDetail(
+                icon: Icons.phone,
+                text: 'Contact: ${developer.contactNumber}',
+              ),
+              SizedBox(height: 8),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                child: Text(
+                  developer.bio,
+                  style: GoogleFonts.poppins(
+                    fontSize: 14,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              SizedBox(height: 16),
+            ],
+          ),
+        );
+      },
+    );
   }
 
-  void _selectDeveloper(int index) {
-    setState(() {
-      _selectedDeveloperIndex = index == _selectedDeveloperIndex ? -1 : index;
-    });
+  Widget _buildDeveloperCard(Developer developer) {
+    return GestureDetector(
+      onTap: () => _showDeveloperDetails(developer),
+      child: Card(
+        elevation: 3,
+        margin: EdgeInsets.all(8),
+        child: Container(
+          width: 250,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: 16),
+              CircleAvatar(
+                radius: 75,
+                backgroundColor: Colors.transparent,
+                child: CircleAvatar(
+                  radius: 73,
+                  backgroundImage: AssetImage(developer.imageUrl),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  developer.name,
+                  style: GoogleFonts.poppins(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 16),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   Widget _buildDeveloperDetail({
@@ -78,14 +191,14 @@ class _InfoState extends State<Info> {
     required String text,
   }) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Icon(
             icon,
             size: 20,
-            color: Colors.blue,
+            color: Colors.black,
           ),
           SizedBox(width: 8),
           Expanded(
@@ -151,9 +264,9 @@ class _InfoState extends State<Info> {
                 ),
               ),
               SizedBox(height: 32),
-              GestureDetector(
-                onTap: _toggleExpand,
+              Center(
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.group,
@@ -167,76 +280,18 @@ class _InfoState extends State<Info> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(width: 8),
-                    Icon(
-                      _isExpanded ? Icons.expand_less : Icons.expand_more,
-                      size: 30,
-                    ),
                   ],
                 ),
               ),
               SizedBox(height: 16),
-              if (_isExpanded)
-                ExpansionPanelList(
-                  elevation: 1,
-                  expandedHeaderPadding: EdgeInsets.zero,
-                  expansionCallback: (int panelIndex, bool isExpanded) {
-                    _selectDeveloper(panelIndex);
-                  },
-                  children:
-                      developers.map<ExpansionPanel>((Developer developer) {
-                    int index = developers.indexOf(developer);
-                    return ExpansionPanel(
-                      headerBuilder: (BuildContext context, bool isExpanded) {
-                        return ListTile(
-                          leading: CircleAvatar(
-                            radius: 30,
-                            backgroundImage: AssetImage(developer.imageUrl),
-                          ),
-                          title: Text(
-                            developer.name,
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        );
-                      },
-                      body: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            _buildDeveloperDetail(
-                              icon: Icons.person,
-                              text: 'Name: ${developer.name}',
-                            ),
-                            _buildDeveloperDetail(
-                              icon: Icons.person,
-                              text: 'Age: ${developer.age}',
-                            ),
-                            _buildDeveloperDetail(
-                              icon: Icons.location_on,
-                              text: 'Location: ${developer.location}',
-                            ),
-                            _buildDeveloperDetail(
-                              icon: Icons.phone,
-                              text: 'Contact: ${developer.contactNumber}',
-                            ),
-                            SizedBox(height: 8),
-                            Text(
-                              developer.bio,
-                              style: GoogleFonts.poppins(
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      isExpanded: _selectedDeveloperIndex == index,
-                    );
-                  }).toList(),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: developers
+                      .map((developer) => _buildDeveloperCard(developer))
+                      .toList(),
                 ),
+              ),
             ],
           ),
         ),
@@ -244,3 +299,7 @@ class _InfoState extends State<Info> {
     );
   }
 }
+
+void main() => runApp(MaterialApp(
+      home: Info(),
+    ));
