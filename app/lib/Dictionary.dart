@@ -29,7 +29,7 @@ class _DictionaryState extends State<Dictionary> {
     {
       'title': 'AFAB',
       'content':
-          'Assigned Female at Birth. The terms AFAB and AMAB are used by a wide range of individuals, including those who are transgender, non-binary, or intersex. While AFAB or AMAB may be useful for describing different trans or non-binary experiences, they are generally not considered identities in and of themselves. Calling a transman “AFAB,” for example, erases his identity as a man. Instead, use a person’s requested pronouns and self-description. [Rainbow Round Table]'
+          'Assigned Female at Birth. The terms AFAB and AMAB are used by a wide range of individuals, including those who are transgender, non-binary, or intersex. While AFAB or AMAB may be useful for describing different trans or non-binary experiences, they are generally not considered identities in and of themselves. Calling a transman “AFAB,” for example, erases his identity as a man. Instead, use a person’s requested pronouns and self-description.'
     },
     {
       'title': 'Ageism',
@@ -64,7 +64,7 @@ class _DictionaryState extends State<Dictionary> {
     {
       'title': 'AMAB',
       'content':
-          'Assigned Male at Birth. The terms AFAB and AMAB are used by a wide range of individuals, including those who are transgender, non-binary, or intersex. While AFAB or AMAB may be useful for describing different trans or non-binary experiences, they are generally not considered identities in and of themselves. Calling a transman “AFAB,” for example, erases his identity as a man. Instead, use a person’s requested pronouns and self-description. [Rainbow Round Table]'
+          'Assigned Male at Birth. The terms AFAB and AMAB are used by a wide range of individuals, including those who are transgender, non-binary, or intersex. While AFAB or AMAB may be useful for describing different trans or non-binary experiences, they are generally not considered identities in and of themselves. Calling a transman “AFAB,” for example, erases his identity as a man. Instead, use a person’s requested pronouns and self-description.'
     },
     {
       'title': 'Androgyne',
@@ -154,7 +154,8 @@ class _DictionaryState extends State<Dictionary> {
                 controller: _searchController,
                 decoration: InputDecoration(
                   labelText: 'Search',
-                  labelStyle: GoogleFonts.poppins(fontSize: 13), // Set the label text style to Poppins
+                  labelStyle: GoogleFonts.poppins(
+                      fontSize: 13), // Set the label text style to Poppins
                   prefixIcon: Icon(Icons.search),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
