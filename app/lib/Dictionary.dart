@@ -91,7 +91,6 @@ class _DictionaryState extends State<Dictionary> {
           'A neurological variation encompassing a wide range of presentations and experiences. Common characteristics of autism include repetitive behavior and differences in social interaction, interpersonal relationships, and communication. For some people, their gender identity is significantly tied to their identity as an autistic person.'
     },
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -5,7 +5,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
+      backgroundColor:
+          Color.fromARGB(255, 250, 250, 250), // Light background color
       appBar: AppBar(
         title: Text(
           'Home',
