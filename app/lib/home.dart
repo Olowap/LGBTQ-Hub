@@ -59,7 +59,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                     Text(
-                      'What is LGBTQ?',
+                      'What is LGBTQ+?',
                       style: GoogleFonts.poppins(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
