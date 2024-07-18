@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+void main() => runApp(MaterialApp(
+      home: Dictionary(),
+    ));
+
 class Dictionary extends StatefulWidget {
   @override
   _DictionaryState createState() => _DictionaryState();
@@ -106,8 +110,7 @@ class _DictionaryState extends State<Dictionary> {
                 ),
               ),
               Container(
-                color: Colors.black
-                    .withOpacity(0.3), // Adjust the opacity value as needed
+                color: Colors.black.withOpacity(0.3),
               ),
               Center(
                 child: Text(
@@ -152,12 +155,10 @@ class _DictionaryState extends State<Dictionary> {
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: TextField(
                 controller: _searchController,
-                style: GoogleFonts.poppins(
-                    fontSize: 13), // Set the input text style to Poppins
+                style: GoogleFonts.poppins(fontSize: 13),
                 decoration: InputDecoration(
                   labelText: 'Search',
-                  labelStyle: GoogleFonts.poppins(
-                      fontSize: 13), // Set the label text style to Poppins
+                  labelStyle: GoogleFonts.poppins(fontSize: 13),
                   prefixIcon: Icon(Icons.search),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -207,7 +208,7 @@ class _DictionaryState extends State<Dictionary> {
       BuildContext context, String title, String content) {
     return Center(
       child: Container(
-        width: 300, // Adjust the width as needed
+        width: 300,
         child: Card(
           elevation: 2,
           margin: EdgeInsets.symmetric(vertical: 8),
@@ -217,28 +218,26 @@ class _DictionaryState extends State<Dictionary> {
                 context: context,
                 builder: (BuildContext context) {
                   return AlertDialog(
-                    title: Text(
-                      title,
-                      style: GoogleFonts.poppins(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
+                    title: Center(
+                      child: Text(
+                        title,
+                        style: GoogleFonts.poppins(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                    content: Text(
-                      content,
-                      style: GoogleFonts.poppins(
-                        fontSize: 15,
+                    content: SingleChildScrollView(
+                      child: Text(
+                        content,
+                        style: GoogleFonts.poppins(
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                     actions: <Widget>[
                       TextButton(
-                        child: Text(
-                          'Close',
-                          style: GoogleFonts.poppins(
-                            fontSize: 15,
-                            color: Colors.black,
-                          ),
-                        ),
+                        child: Text('Close'),
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
@@ -249,18 +248,13 @@ class _DictionaryState extends State<Dictionary> {
               );
             },
             child: Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: GoogleFonts.poppins(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
+              padding: const EdgeInsets.all(12.0),
+              child: Text(
+                title,
+                style: GoogleFonts.poppins(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
@@ -269,7 +263,3 @@ class _DictionaryState extends State<Dictionary> {
     );
   }
 }
-
-void main() => runApp(MaterialApp(
-      home: Dictionary(),
-    ));
