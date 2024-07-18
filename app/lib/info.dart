@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// ignore: unused_import
 import 'package:google_fonts/google_fonts.dart';
 
 class Info extends StatelessWidget {
@@ -7,10 +6,25 @@ class Info extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About',
-        style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        title: Text(
+          'About',
+          style: GoogleFonts.poppins(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
-         backgroundColor: Colors.pink[400],
+        backgroundColor: const Color.fromARGB(255, 213, 194, 200),
+      ),
+      body: Center(
+        child: Text(
+          'About',
+          style: GoogleFonts.poppins(
+            fontSize: 16,
+            fontWeight: FontWeight.normal,
+            color: Colors.white,
+          ),
+        ),
       ),
     );
   }

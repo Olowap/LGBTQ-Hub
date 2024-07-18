@@ -43,6 +43,7 @@ class Dictionary extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              const SizedBox(height: 25),
               Center(
                 child: Text(
                   'PRIDE UMBRELLA',
@@ -58,6 +59,7 @@ class Dictionary extends StatelessWidget {
                   fontSize: 13,
                 ),
               ),
+              const SizedBox(height: 35),
               SizedBox(height: 8),
               _buildDictionaryCard('Ally', 'input'),
               _buildDictionaryCard('Bayot', 'input'),
