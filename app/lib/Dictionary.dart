@@ -137,13 +137,14 @@ class Dictionary extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    content,
-                    style: GoogleFonts.poppins(
-                      fontSize: 12,
-                    ),
-                  ),
+                  // Hiding the content here by commenting it out
+                  // SizedBox(height: 8),
+                  // Text(
+                  //   content,
+                  //   style: GoogleFonts.poppins(
+                  //     fontSize: 12,
+                  //   ),
+                  // ),
                 ],
               ),
             ),
