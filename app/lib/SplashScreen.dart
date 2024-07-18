@@ -54,8 +54,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
               opacity: _animation,
               child: Image.asset(
                 'Splash/HUB.png', // Replace with your image asset path
-                width: 800,
-                height: 800,
+                width: 800, // Adjust width as needed
+                height: 800, // Adjust height as needed
               ),
             ),
           ),
