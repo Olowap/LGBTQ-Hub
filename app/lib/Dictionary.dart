@@ -152,6 +152,8 @@ class _DictionaryState extends State<Dictionary> {
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: TextField(
                 controller: _searchController,
+                style: GoogleFonts.poppins(
+                    fontSize: 13), // Set the input text style to Poppins
                 decoration: InputDecoration(
                   labelText: 'Search',
                   labelStyle: GoogleFonts.poppins(
