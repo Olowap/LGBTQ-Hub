@@ -1,7 +1,44 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Dictionary extends StatelessWidget {
+class Dictionary extends StatefulWidget {
+  @override
+  _DictionaryState createState() => _DictionaryState();
+}
+
+class _DictionaryState extends State<Dictionary> {
+  TextEditingController _searchController = TextEditingController();
+  String _searchQuery = "";
+  List<String> _suggestions = [];
+
+  final List<Map<String, String>> _dictionaryEntries = [
+    {
+      'title': 'Ally',
+      'content':
+          'Ally is a term used to describe a person who supports and stands up for the rights and dignity of LGBTQIA+ individuals.'
+    },
+    {
+      'title': 'Bayot',
+      'content':
+          'Bayot is a Filipino term often used to refer to a gay man. It can be both empowering and derogatory, depending on the context.'
+    },
+    {
+      'title': 'C.Tirona',
+      'content':
+          'C.Tirona is an example placeholder. Replace this with relevant content.'
+    },
+    {
+      'title': 'Daga',
+      'content':
+          'Daga is a Filipino term that can refer to a coward or someone who is afraid.'
+    },
+    {
+      'title': 'Eme lang',
+      'content':
+          'Eme lang is a Filipino colloquial expression which means "just kidding" or "just joking".'
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,45 +76,75 @@ class Dictionary extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      body: Center(
-        child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              const SizedBox(height: 25),
-              Center(
-                child: Text(
-                  'PRIDE UMBRELLA',
-                  style: GoogleFonts.poppins(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Text(
-                'Get to know more about the LGBTQIA+ community.',
+      body: SingleChildScrollView(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            const SizedBox(height: 25),
+            Center(
+              child: Text(
+                'PRIDE UMBRELLA',
                 style: GoogleFonts.poppins(
-                  fontSize: 13,
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 35),
-              SizedBox(height: 8),
-              _buildDictionaryCard(context, 'Ally',
-                  'Ally is a term used to describe a person who supports and stands up for the rights and dignity of LGBTQIA+ individuals.'),
-              _buildDictionaryCard(context, 'Bayot',
-                  'Bayot is a Filipino term often used to refer to a gay man. It can be both empowering and derogatory, depending on the context.'),
-              _buildDictionaryCard(context, 'C.Tirona',
-                  'C.Tirona is an example placeholder. Replace this with relevant content.'),
-              _buildDictionaryCard(context, 'Daga',
-                  'Daga is a Filipino term that can refer to a coward or someone who is afraid.'),
-              _buildDictionaryCard(context, 'Eme lang',
-                  'Eme lang is a Filipino colloquial expression which means "just kidding" or "just joking".'),
-            ],
-          ),
+            ),
+            Text(
+              'Get to know more about the LGBTQIA+ community.',
+              style: GoogleFonts.poppins(
+                fontSize: 13,
+              ),
+            ),
+            const SizedBox(height: 25),
+            TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                labelText: 'Search',
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              onChanged: (value) {
+                setState(() {
+                  _searchQuery = value.toLowerCase();
+                  _updateSuggestions();
+                });
+              },
+            ),
+            const SizedBox(height: 35),
+            ..._buildFilteredDictionaryCards(),
+          ],
         ),
       ),
     );
+  }
+
+  void _updateSuggestions() {
+    if (_searchQuery.isEmpty) {
+      _suggestions.clear();
+    } else {
+      _suggestions = _dictionaryEntries
+          .where(
+              (entry) => entry['title']!.toLowerCase().contains(_searchQuery))
+          .map((entry) => entry['title']!)
+          .toList();
+    }
+  }
+
+  List<Widget> _buildFilteredDictionaryCards() {
+    List<Widget> filteredCards = [];
+    for (var entry in _dictionaryEntries) {
+      if (entry['title']!.toLowerCase().contains(_searchQuery) ||
+          entry['content']!.toLowerCase().contains(_searchQuery)) {
+        filteredCards.add(
+            _buildDictionaryCard(context, entry['title']!, entry['content']!));
+      }
+    }
+    return filteredCards;
   }
 
   Widget _buildDictionaryCard(
@@ -137,14 +204,6 @@ class Dictionary extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  // Hiding the content here by commenting it out
-                  // SizedBox(height: 8),
-                  // Text(
-                  //   content,
-                  //   style: GoogleFonts.poppins(
-                  //     fontSize: 12,
-                  //   ),
-                  // ),
                 ],
               ),
             ),
@@ -154,3 +213,7 @@ class Dictionary extends StatelessWidget {
     );
   }
 }
+
+void main() => runApp(MaterialApp(
+      home: Dictionary(),
+    ));
