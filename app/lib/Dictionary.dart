@@ -154,6 +154,7 @@ class _DictionaryState extends State<Dictionary> {
                 controller: _searchController,
                 decoration: InputDecoration(
                   labelText: 'Search',
+                  labelStyle: GoogleFonts.poppins(fontSize: 13), // Set the label text style to Poppins
                   prefixIcon: Icon(Icons.search),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -232,7 +233,7 @@ class _DictionaryState extends State<Dictionary> {
                           'Close',
                           style: GoogleFonts.poppins(
                             fontSize: 15,
-                            color: Colors.pink,
+                            color: Colors.black,
                           ),
                         ),
                         onPressed: () {
