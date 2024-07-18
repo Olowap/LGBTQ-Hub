@@ -22,11 +22,7 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'Bayot is a Filipino term often used to refer to a gay man. It can be both empowering and derogatory, depending on the context.'
     },
-    {
-      'title': 'C.Tirona',
-      'content':
-          'C.Tirona is an example placeholder. Replace this with relevant content.'
-    },
+    {'title': 'C.Tirona', 'content': 'C.Tirona Anak ni oni'},
     {
       'title': 'Daga',
       'content':
@@ -99,21 +95,24 @@ class _DictionaryState extends State<Dictionary> {
               ),
             ),
             const SizedBox(height: 25),
-            TextField(
-              controller: _searchController,
-              decoration: InputDecoration(
-                labelText: 'Search',
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: TextField(
+                controller: _searchController,
+                decoration: InputDecoration(
+                  labelText: 'Search',
+                  prefixIcon: Icon(Icons.search),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
+                onChanged: (value) {
+                  setState(() {
+                    _searchQuery = value.toLowerCase();
+                    _updateSuggestions();
+                  });
+                },
               ),
-              onChanged: (value) {
-                setState(() {
-                  _searchQuery = value.toLowerCase();
-                  _updateSuggestions();
-                });
-              },
             ),
             const SizedBox(height: 35),
             ..._buildFilteredDictionaryCards(),
