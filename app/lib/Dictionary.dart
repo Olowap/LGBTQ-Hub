@@ -483,6 +483,21 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'The process of exploring one\'s gender identity, gender expression, and/or sexual orientation. Some use this term to identify themselves within the LGBTQIA community.'
     },
+    {
+      'title': 'Race',
+      'content':
+          'A social construct dividing people based on physical appearance, ancestry, and cultural affiliation, influenced by societal context.'
+    },
+    {
+      'title': 'Racism',
+      'content':
+          'Systemic subordination of marginalized racial groups, perpetuated by those in power. Individual acts of discrimination often stem from systemic racism.'
+    },
+    {
+      'title': 'Romantic Orientation',
+      'content':
+          'Attraction or non-attraction to others characterized by expressions of love, with labels that can vary and may be fluid.'
+    },
   ];
 
   @override
