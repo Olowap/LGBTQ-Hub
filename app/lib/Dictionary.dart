@@ -412,6 +412,56 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'Orientation is one’s attraction or non-attraction to other people. An individual’s orientation can be fluid and people use a variety of labels to describe their orientation. Some, but not all, types of attraction or orientation include: romantic, sexual, sensual, aesthetic, intellectual and platonic.'
     },
+    {
+      'title': 'Pansexual (Pan), Omnisexual (Omni)',
+      'content':
+          'People who have romantic, sexual, or affectional attraction to individuals of all genders and sexes. Overlaps with bisexuality and polysexuality.'
+    },
+    {
+      'title': 'Passing',
+      'content':
+          'When a trans individual is perceived as cisgender. Often seen as a form of privilege but can impose unrealistic expectations to conform to cisnormativity. Also applies to gay/lesbian/queer individuals being perceived as straight.'
+    },
+    {
+      'title': 'Phobia',
+      'content':
+          'An excessive fear disproportionate to the actual threat. Historically misused to describe systems of oppression (e.g., homophobia referring to heterosexism).'
+    },
+    {
+      'title': 'Polyamory/Poly',
+      'content':
+          'Consensually engaging in or being open to multiple loving relationships simultaneously. Sometimes considered a relationship orientation and an umbrella term for ethical non-monogamy.'
+    },
+    {
+      'title': 'Polycule',
+      'content':
+          'A network of people in emotionally, sexually, or romantically connected relationships, each with its own structures and boundaries.'
+    },
+    {
+      'title': 'Polygender, Pangender',
+      'content':
+          'Identifying with multiple genders, challenging the concept of a gender binary.'
+    },
+    {
+      'title': 'Polysexual',
+      'content':
+          'Attraction to more than one gender, distinct from polyamory and overlapping with bisexuality and pansexuality.'
+    },
+    {
+      'title': 'Positive',
+      'content':
+          'Shortened term for HIV positive, used to voluntarily disclose one\'s status.'
+    },
+    {
+      'title': 'Privilege',
+      'content':
+          'Unearned benefits given to people in specific social groups. Originates from W.E.B. DuBois\' concept of "psychological wage" and expanded by Peggy McIntosh\'s work on unearned white privileges.'
+    },
+    {
+      'title': 'Pronouns',
+      'content':
+          'Words used to refer to someone in the third person, such as they/them, ze/hir, she/her, and he/him. Pronouns can be tied to gender and are a common source of misgendering.'
+    },
   ];
 
   @override
