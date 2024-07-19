@@ -171,6 +171,31 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'An approach to engagement across differences, focusing on lifelong self-evaluation, addressing power imbalances, and developing partnerships for systemic advocacy.'
     },
+    {
+      'title': 'Deadname/Deadnaming',
+      'content':
+          'A deadname is a former name, usually the birth name, that a trans+/nonbinary person no longer uses. Using this name, whether intentionally or not, is referred to as deadnaming and is considered offensive and hurtful.'
+    },
+    {
+      'title': 'Demisexual',
+      'content':
+          'A sexual orientation where a person feels sexual attraction only after forming an emotional bond. Demisexuals often experience sexual attraction less frequently and are on the asexual spectrum.'
+    },
+    {
+      'title': 'Disability/(Dis)ability/Dis/ability',
+      'content':
+          'A social construct identifying any restriction or lack of ability to perform activities considered typical for a human, shaped by environments constructed for the dominant or typical person.'
+    },
+    {
+      'title': 'Discrimination',
+      'content':
+          'Inequitable actions by members of a dominant group or its representatives against marginalized or minoritized groups.'
+    },
+    {
+      'title': 'Drag/Drag King/Drag Queen',
+      'content':
+          'The theatrical performance of gender through dressing in clothing associated with a different gender. Drag queens perform in feminine attire; drag kings in masculine attire. Drag is a form of gender expression, not an indication of gender identity, and performers may identify with various sexual orientations.'
+    },
   ];
 
   @override
