@@ -126,6 +126,51 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'How a person feels, acts, and thinks about their body. Attitudes about our own body and bodies in general are shaped by our communities, families, cultures, media, and our own perceptions.'
     },
+    {
+      'title': 'Cisgender',
+      'content':
+          'A person whose gender identity matches their sex assigned at birth.'
+    },
+    {
+      'title': 'Cisnormativity',
+      'content':
+          'The assumption that there are only two genders, that one\'s gender aligns with their sex assigned at birth, and that this is the norm.'
+    },
+    {
+      'title': 'Cisgender',
+      'content':
+          'A person whose gender identity matches their sex assigned at birth.'
+    },
+    {
+      'title': 'Cisnormativity',
+      'content':
+          'The assumption that there are only two genders, that one\'s gender aligns with their sex assigned at birth, and that this is the norm.'
+    },
+    {
+      'title': 'Cissexism/Genderism',
+      'content':
+          'A system of discrimination that privileges cisgender people and oppresses those who do not conform to cis-normative constructs.'
+    },
+    {
+      'title': 'Coming Out',
+      'content':
+          'The process of revealing one\'s sexual orientation or gender identity, with terms like "being out" and "outing" referring to the state of being open or involuntarily disclosed.'
+    },
+    {
+      'title': 'Cross Dresser (CD)',
+      'content':
+          'Someone who dresses as a different gender than their assigned sex, without implications for sexual orientation or gender identity.'
+    },
+    {
+      'title': 'Culture',
+      'content':
+          'The shared values, beliefs, customs, norms, and perceptions of a group that shape their way of life.'
+    },
+    {
+      'title': 'Cultural Humility',
+      'content':
+          'An approach to engagement across differences, focusing on lifelong self-evaluation, addressing power imbalances, and developing partnerships for systemic advocacy.'
+    },
   ];
 
   @override
