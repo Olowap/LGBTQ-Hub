@@ -267,6 +267,21 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'Attitudes and behaviors that incorrectly assume everyone is straight, or that being heterosexual is “normal”. Heteronormativity also assumes people should and will align with conventional expectations of society for sexual and romantic attraction.'
     },
+    {
+      'title': 'Internalized Oppression',
+      'content':
+          'The fear and self-hate of one\'s own identities, stemming from the acceptance of negative stereotypes and myths about their oppressed group.'
+    },
+    {
+      'title': 'Intersectionality',
+      'content':
+          'A concept by Kimberlé Crenshaw describing how multiple systems of oppression interact in the lives of those with multiple marginalized identities, allowing for a more comprehensive analysis of social issues and more effective advocacy.'
+    },
+    {
+      'title': 'Intersex',
+      'content':
+          'A term for a variety of natural body variations that do not fit conventional definitions of male or female, including differences in chromosomes, hormones, and reproductive or sexual anatomy.'
+    },
   ];
 
   @override
