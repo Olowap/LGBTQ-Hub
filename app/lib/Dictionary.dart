@@ -207,6 +207,16 @@ class _DictionaryState extends State<Dictionary> {
           'A social construct that divides people into smaller social groups based on characteristics such as shared sense of group membership, values, behavioral patterns, language, political and economic interests, history and ancestral geographical base.'
     },
     {'title': 'Euphoria', 'content': 'See “Gender Euphoria”.'},
+    {
+      'title': 'Femme',
+      'content':
+          'Historically used in the lesbian community to refer to a feminine lesbian, it is being increasingly used by other LGBTQIA people to describe gender expressions that reclaim and disrupt traditional constructs of femininity.'
+    },
+    {
+      'title': 'FTM',
+      'content':
+          'Female to Male. Generally used to refer to anyone assigned female at birth whose affirmed gender identity or expression is masculine all or part of the time. Some people prefer the term ‘transitioning to male’ (or ‘male,’ ‘man’ or ‘trans man’), as this does not use misgendering language. This term is not used as often in the 2020s, but may be important in certain (e.g., medical) contexts.'
+    },
   ];
 
   @override
