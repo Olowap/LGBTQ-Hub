@@ -39,7 +39,7 @@ class _InfoState extends State<Info> {
       name: 'Rizabel Lingon',
       age: 21,
       location: 'Pallocan West, Batangas City',
-      contactNumber: '+639987654321',
+      contactNumber: '+63998-765-4321',
       imageUrl: 'Info/Joven.jpg',
       bio:
           'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
@@ -48,7 +48,7 @@ class _InfoState extends State<Info> {
       name: 'John Aldrin L. Seva',
       age: 21,
       location: 'Pallocan West, Batangas City',
-      contactNumber: '+639876543210',
+      contactNumber: '+63987-654-3210',
       imageUrl: 'Info/Joven.jpg',
       bio:
           'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
@@ -57,8 +57,8 @@ class _InfoState extends State<Info> {
       name: 'Juan Paolo Martin V. Ramos',
       age: 21,
       location: 'Tingga Labac, Batangas City',
-      contactNumber: '+639876543210',
-      imageUrl: 'Info/Joven.jpg',
+      contactNumber: '+63997-280-6864',
+      imageUrl: 'Info/paolo.jpg',
       bio:
           'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
     ),
@@ -217,17 +217,6 @@ class _InfoState extends State<Info> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'About',
-          style: GoogleFonts.poppins(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-        backgroundColor: const Color.fromARGB(255, 213, 194, 200),
-      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -299,7 +288,3 @@ class _InfoState extends State<Info> {
     );
   }
 }
-
-void main() => runApp(MaterialApp(
-      home: Info(),
-    ));

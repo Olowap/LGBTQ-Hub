@@ -46,6 +46,27 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(
+          // Light background color
+        flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('appbar/bgapp.png'), // Replace with your image asset path
+                fit: BoxFit.cover,
+              ),
+            ),  
+          ),
+           backgroundColor:
+          Color.fromARGB(158, 116, 112, 112), 
+        title: Image.asset('appbar/app.png',
+        height: 150.0,
+        width: 99.0,
+        ),
+        
+      ),
+
+
       body: IndexedStack(
         index: _selectedIndex,
         children: _widgetOptions,

@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-void main() => runApp(MaterialApp(
-      home: Dictionary(),
-    ));
-
 class Dictionary extends StatefulWidget {
   @override
   _DictionaryState createState() => _DictionaryState();
@@ -94,39 +89,7 @@ class _DictionaryState extends State<Dictionary> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(56.0), // Height of the app bar
-        child: AppBar(
-          flexibleSpace: Stack(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(
-                        'splash.png'), // Replace with your image asset path
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.black.withOpacity(0.3),
-              ),
-              Center(
-                child: Text(
-                  'Pride Dictionary',
-                  style: GoogleFonts.poppins(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
-      ),
+
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(
