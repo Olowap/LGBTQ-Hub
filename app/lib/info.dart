@@ -39,7 +39,7 @@ class _InfoState extends State<Info> {
       name: 'Rizabel D. Lingon',
       age: 21,
       location: 'Sitio Dumuclay Ibaba, Batangas City',
-      contactNumber: '+63',
+      contactNumber: '+639561334540',
       imageUrl: 'Info/Riza.png',
       bio:
           'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
