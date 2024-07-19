@@ -498,6 +498,31 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'Attraction or non-attraction to others characterized by expressions of love, with labels that can vary and may be fluid.'
     },
+    {
+      'title': 'Same Gender Loving',
+      'content':
+          'A term used by some African American people who love, date, or have attraction to people of the same gender.'
+    },
+    {
+      'title': 'Sapphic',
+      'content':
+          'Used to describe any female-identifying person who is attracted to other female-identifying people. This broad term includes lesbians, bisexuals, omnisexuals, pansexuals, romantic asexuals, and other orientations, as well as nonbinary folks. Often sapphic is used as a more inclusive term instead of “women who like women (WLW)” or lesbian.'
+    },
+    {
+      'title': 'Sex/Sex Assigned at Birth',
+      'content':
+          'A medically constructed categorization. Sex is often assigned based on the appearance of the genitalia, either in ultrasound or at birth. Sex assigned at birth is different from gender identity, and sex is not always binary, such as for Intersex individuals. See also Intersex, AFAB, and AMAB.'
+    },
+    {
+      'title': 'Sexism',
+      'content':
+          'The cultural, institutional, and individual set of beliefs and practices that privilege men, subordinate women, and devalue ways of being that are associated with women.'
+    },
+    {
+      'title': 'Sexuality',
+      'content':
+          'The components of a person that include their biological sex, sexual orientation, gender identity, sexual practices, etc.'
+    },
   ];
 
   @override
