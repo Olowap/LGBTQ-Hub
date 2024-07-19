@@ -292,6 +292,31 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'The scale developed by Alfred Kinsey in the 1940s, which was used for measuring sexual attraction and behavior along a continuum.'
     },
+    {
+      'title': 'Latine',
+      'content':
+          'A non-gender-specific term for people of Latin American descent, created as a more easily pronounced alternative to Latinx. It does not assume a gender binary and includes non-binary individuals.'
+    },
+    {
+      'title': 'Leather Community',
+      'content':
+          'A community of individuals who enjoy leather as part of their sexual activities, often linked to fetish-based communities such as BDSM and rubber. While often associated with the queer community, it is not exclusive to it.'
+    },
+    {
+      'title': 'Lesbian',
+      'content':
+          'Typically, a woman whose primary sexual and romantic attraction is to other women. Some nonbinary people also identify as lesbians due to their connection to womanhood and attraction to women.'
+    },
+    {
+      'title': 'LGBTQIA+',
+      'content':
+          'An acronym for Lesbian, Gay, Bisexual, Transgender, Queer, Intersex, and Asexual, with the “+” including other identities not specified. This term is used to refer to the diverse community as a whole.'
+    },
+    {
+      'title': 'Lived Name',
+      'content':
+          'A name used by someone that differs from their legal name. Often adopted by trans and nonbinary people to affirm their gender identity. The term "lived name" is preferred over "preferred name" to avoid the implication that using it is optional, which can lead to deadnaming.'
+    },
   ];
 
   @override
