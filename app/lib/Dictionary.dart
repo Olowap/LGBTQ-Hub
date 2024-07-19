@@ -397,6 +397,21 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'A gender identity that moves beyond the male/female binary, encompassing a wide range of expressions and ways of being. It can overlap with concepts like gender expansive and gender non-conforming.'
     },
+    {
+      'title': 'Omnigender',
+      'content':
+          'Possessing all genders. The term is used specifically to refute the concept of only two genders.'
+    },
+    {
+      'title': 'Oppression',
+      'content':
+          'Exists when one social group, whether knowingly or unconsciously, exploits another social group for its own benefit.'
+    },
+    {
+      'title': 'Orientation',
+      'content':
+          'Orientation is one’s attraction or non-attraction to other people. An individual’s orientation can be fluid and people use a variety of labels to describe their orientation. Some, but not all, types of attraction or orientation include: romantic, sexual, sensual, aesthetic, intellectual and platonic.'
+    },
   ];
 
   @override
