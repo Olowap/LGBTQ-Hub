@@ -523,6 +523,31 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'The components of a person that include their biological sex, sexual orientation, gender identity, sexual practices, etc.'
     },
+    {
+      'title': 'Trans',
+      'content':
+          'The term trans acts as a more inclusive term than transgender for gender non-conforming and non-binary folks.'
+    },
+    {
+      'title': 'Trans man',
+      'content':
+          'Usually, a person assigned female at birth who identifies as a man. A person may choose to identify this way to capture their gender identity as well as their lived experience as a transgender person.'
+    },
+    {
+      'title': 'Transfeminine/Transfem',
+      'content':
+          'A term used to describe a person, usually AMAB or Intersex, who identifies with femininity in some way. Includes Trans women, as well as other trans+ people who have a connection to femininity.'
+    },
+    {
+      'title': 'Transmasculine/Transmasc',
+      'content':
+          'A term used to describe a person, usually AFAB or Intersex, who identifies with masculinity in some way. Includes Trans men, as well as other trans+ people who have a connection to masculinity.'
+    },
+    {
+      'title': 'Transphobia',
+      'content':
+          'When people have deeply rooted negative beliefs about what it means to be transgender, nonbinary, and gender nonconforming. Their beliefs affect the way they, the government, organizations, the media, and society generally treat people whose identities don’t fit into typical gender roles.'
+    },
   ];
 
   @override
