@@ -282,6 +282,16 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'A term for a variety of natural body variations that do not fit conventional definitions of male or female, including differences in chromosomes, hormones, and reproductive or sexual anatomy.'
     },
+    {
+      'title': 'Kink',
+      'content':
+          '(Kinky, Kinkiness) Most commonly referred to as unconventional sexual practices, from which people derive varying forms of pleasure and consensually play out various forms of desires, fantasies, and scenes. Kink includes BDSM, leather, wax play, etc.'
+    },
+    {
+      'title': 'Kinsey scale',
+      'content':
+          'The scale developed by Alfred Kinsey in the 1940s, which was used for measuring sexual attraction and behavior along a continuum.'
+    },
   ];
 
   @override
