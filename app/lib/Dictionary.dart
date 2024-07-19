@@ -43,7 +43,7 @@ class _DictionaryState extends State<Dictionary> {
     {
       'title': 'Agender',
       'content':
-          'An identity under the non-binary and trans+ umbrella. Some agender people feel that they have no gender identity, while others feel that agender is itself a gender identity. This can be similar to or overlap with the experience of being gender neutral, or having a neutral gender identity. Also see Neutrois. [Albert Kennedy]'
+          'An identity under the non-binary and trans+ umbrella. Some agender people feel that they have no gender identity, while others feel that agender is itself a gender identity. This can be similar to or overlap with the experience of being gender neutral, or having a neutral gender identity. Also see Neutrois.'
     },
     {
       'title': 'Allistic',
@@ -90,7 +90,48 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'A neurological variation encompassing a wide range of presentations and experiences. Common characteristics of autism include repetitive behavior and differences in social interaction, interpersonal relationships, and communication. For some people, their gender identity is significantly tied to their identity as an autistic person.'
     },
+    {
+      'title': 'BDSM',
+      'content':
+          'Bondage and Discipline, Dominance and Submission, Sadism and Masochism. BDSM refers to a wide spectrum of activities and forms of interpersonal relationships. While not always overtly sexual in nature, the activities and relationships within a BDSM context are almost always eroticized by the participants in some fashion. Many of these practices fall outside of commonly held social norms regarding sexuality and human relationships.'
+    },
+    {
+      'title': 'Bear Community',
+      'content':
+          'A part of the queer community composed of queer cisgender, transgender, or gender variant men similar in physical looks and interests, most of them large, hairy, and on the masculine side of presentation. The community aims to provide spaces where one feels wanted, desired, and liked. It nourishes and values an individual’s process of making friends and learning self-care and self-love through the unity and support of the community. Bears, Cubs, Otters, Wolves, Chasers, Admirers and other wildlife comprise what has come to be known as the Brotherhood of Bears and/or the Bear community. See also: Ursula.'
+    },
+    {
+      'title': 'Bigender',
+      'content':
+          'Having two genders, exhibiting characteristics of masculine and feminine roles.'
+    },
+    {
+      'title': 'Binding',
+      'content':
+          'The process of reducing the appearance of breasts by wrapping or compressing the chest using various methods. Binding can be very gender-affirming for many people, however it must be done safely. Learn more about safe binding.'
+    },
+    {
+      'title': 'Biphobia',
+      'content':
+          'Oppression, discrimination and hatred toward those who identify as bisexual, pansexual, and omnisexual. Biphobia can be present in both the LGBTQ+ and broader community. See also Monosexism.'
+    },
+    {
+      'title': 'Bisexual/Bi',
+      'content':
+          'A person whose primary sexual and affectional orientation is toward people of the same and other genders, or towards people regardless of their gender. Some people may use bisexual and pansexual interchangeably.'
+    },
+    {
+      'title': 'BlaQ/BlaQueer',
+      'content':
+          'Folks of Black/African descent and/or from the African diaspora who recognize their queerness/LGBTQIA identity as a salient identity attached to their Blackness and vice versa.'
+    },
+    {
+      'title': 'Body Image',
+      'content':
+          'How a person feels, acts, and thinks about their body. Attitudes about our own body and bodies in general are shaped by our communities, families, cultures, media, and our own perceptions.'
+    },
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
