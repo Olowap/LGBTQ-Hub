@@ -581,9 +581,9 @@ class _DictionaryState extends State<Dictionary> {
             const SizedBox(height: 25),
             Center(
               child: Text(
-                'PRIDE UMBRELLA',
+                'PRIDE DICTIONARY',
                 style: GoogleFonts.poppins(
-                  fontSize: 35,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
               ),
