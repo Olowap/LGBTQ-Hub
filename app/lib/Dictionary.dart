@@ -462,6 +462,27 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'Words used to refer to someone in the third person, such as they/them, ze/hir, she/her, and he/him. Pronouns can be tied to gender and are a common source of misgendering.'
     },
+    {
+      'title': 'QPOC/QTPOC/QTBIPOC',
+      'content':
+          'Acronyms for Queer People of Color, Queer Trans People of Color, and Queer Trans Black Indigenous People of Color, highlighting intersectional identities and their unique experiences of oppression.'
+    },
+    {
+      'title': 'Queer',
+      'content':
+          'An umbrella term for gender/sexual/romantic orientations or identities outside societal norms. Historically a slur, it has been reclaimed by some in the LGBTQ+ community as a celebration of nonconformity. Not universally accepted, especially by older generations, and considered offensive if used by non-LGBTQ+ individuals.'
+    },
+    {
+      'title':
+          'Queer Platonic Relationship (QPR)/Queer Platonic Partnership (QPP)',
+      'content':
+          'Relationships that blend elements of platonic, romantic, and sexual relationships, often involving commitment and intimacy. Frequently embraced by asexual and aromantic individuals for their unique interpersonal needs.'
+    },
+    {
+      'title': 'Questioning',
+      'content':
+          'The process of exploring one\'s gender identity, gender expression, and/or sexual orientation. Some use this term to identify themselves within the LGBTQIA community.'
+    },
   ];
 
   @override
