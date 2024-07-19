@@ -242,6 +242,31 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'A person who varies from the expected characteristics of the assigned gender.'
     },
+    {
+      'title': 'Heterosexism',
+      'content':
+          'The assumption that all people are or should be heterosexual. Heterosexism excludes the needs, concerns, and life experiences of lesbian, gay, bisexual and queer people, while it gives advantages to heterosexual people. It is often a subtle form of oppression, which reinforces realities of silence and erasure.'
+    },
+    {
+      'title': 'Heterosexuality',
+      'content':
+          'A sexual orientation in which a person feels physically attracted to people of a gender other than their own. See also Straight.'
+    },
+    {
+      'title': 'Homophobia',
+      'content':
+          'Oppression, discrimination, and hatred directed toward members of the LGBTQ+ community.'
+    },
+    {
+      'title': 'Homosexual/Homosexuality',
+      'content':
+          'An outdated term to describe a sexual orientation in which a person feels physically and emotionally attracted to people of the same gender.'
+    },
+    {
+      'title': 'Heteronormativity',
+      'content':
+          'Attitudes and behaviors that incorrectly assume everyone is straight, or that being heterosexual is “normal”. Heteronormativity also assumes people should and will align with conventional expectations of society for sexual and romantic attraction.'
+    },
   ];
 
   @override
