@@ -236,6 +236,7 @@ class _InfoState extends State<Info> {
                 style: GoogleFonts.poppins(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(height: 32),
               Text(
@@ -244,6 +245,7 @@ class _InfoState extends State<Info> {
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(height: 16),
               Text(
@@ -251,6 +253,7 @@ class _InfoState extends State<Info> {
                 style: GoogleFonts.poppins(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(height: 32),
               Center(
