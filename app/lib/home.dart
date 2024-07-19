@@ -7,18 +7,6 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor:
           Color.fromARGB(255, 250, 250, 250), // Light background color
-      appBar: AppBar(
-        title: Text(
-          'Home',
-          style: GoogleFonts.poppins(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 0, 0, 0),
-          ),
-        ),
-        backgroundColor: Color.fromARGB(255, 255, 255, 255),
-        elevation: 0, // Flat app bar
-      ),
       body: Center(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(16),
