@@ -569,6 +569,7 @@ class _DictionaryState extends State<Dictionary> {
           'Some womxn spell the word with an “x” as a form of empowerment to move away from the “men” in the “traditional” spelling of women.'
     },
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -625,22 +626,18 @@ class _DictionaryState extends State<Dictionary> {
   }
 
   void _updateSuggestions() {
-    if (_searchQuery.isEmpty) {
-      _suggestions.clear();
-    } else {
-      _suggestions = _dictionaryEntries
-          .where(
-              (entry) => entry['title']!.toLowerCase().contains(_searchQuery))
-          .map((entry) => entry['title']!)
-          .toList();
-    }
+    // Update suggestions based on the search query and title only
+    _suggestions = _dictionaryEntries
+        .where((entry) => entry['title']!.toLowerCase().contains(_searchQuery))
+        .map((entry) => entry['title']!)
+        .toList();
   }
 
   List<Widget> _buildFilteredDictionaryCards() {
     List<Widget> filteredCards = [];
+    // Filter dictionary entries based on the search query
     for (var entry in _dictionaryEntries) {
-      if (entry['title']!.toLowerCase().contains(_searchQuery) ||
-          entry['content']!.toLowerCase().contains(_searchQuery)) {
+      if (entry['title']!.toLowerCase().contains(_searchQuery)) {
         filteredCards.add(
             _buildDictionaryCard(context, entry['title']!, entry['content']!));
       }
