@@ -196,6 +196,17 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'The theatrical performance of gender through dressing in clothing associated with a different gender. Drag queens perform in feminine attire; drag kings in masculine attire. Drag is a form of gender expression, not an indication of gender identity, and performers may identify with various sexual orientations.'
     },
+    {
+      'title': 'Enby',
+      'content':
+          'A slang term used for nonbinary. Enby is the phonetic pronunciation of “NB,” an abbreviation for nonbinary.'
+    },
+    {
+      'title': 'Ethnicity',
+      'content':
+          'A social construct that divides people into smaller social groups based on characteristics such as shared sense of group membership, values, behavioral patterns, language, political and economic interests, history and ancestral geographical base.'
+    },
+    {'title': 'Euphoria', 'content': 'See “Gender Euphoria”.'},
   ];
 
   @override
