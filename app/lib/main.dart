@@ -87,7 +87,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Color.fromARGB(255, 184, 194, 203),
+        selectedItemColor: Color.fromARGB(255, 47, 139, 219),
         onTap: _onItemTapped,
         selectedLabelStyle: GoogleFonts.poppins(fontWeight: FontWeight.bold),
         unselectedLabelStyle: GoogleFonts.poppins(),
