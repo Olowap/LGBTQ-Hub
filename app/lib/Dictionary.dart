@@ -217,6 +217,31 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'Female to Male. Generally used to refer to anyone assigned female at birth whose affirmed gender identity or expression is masculine all or part of the time. Some people prefer the term ‘transitioning to male’ (or ‘male,’ ‘man’ or ‘trans man’), as this does not use misgendering language. This term is not used as often in the 2020s, but may be important in certain (e.g., medical) contexts.'
     },
+    {
+      'title': 'Gay',
+      'content':
+          'A sexual and affectional orientation toward people of the same gender. See Homosexual/Homosexuality.'
+    },
+    {
+      'title': 'Gender',
+      'content':
+          'A social construct used to classify a person as a man, woman, or some other identity. Fundamentally different from the sex one is assigned at birth.'
+    },
+    {
+      'title': 'Gender Affirming',
+      'content':
+          'A broad term encompassing actions, language, medical care, and more, that affirms someone’s gender identity or expression. For example, surgery that alters someone’s appearance to align with their gender identity is referred to as gender-affirming surgery.'
+    },
+    {
+      'title': 'Gender Dysphoria',
+      'content':
+          'Used to describe when a person experiences discomfort or distress because there is a mismatch between their sex assigned at birth and their gender identity.'
+    },
+    {
+      'title': 'Gender Variant',
+      'content':
+          'A person who varies from the expected characteristics of the assigned gender.'
+    },
   ];
 
   @override
