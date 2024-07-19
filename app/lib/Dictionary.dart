@@ -367,6 +367,36 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'An umbrella term for attraction to more than one gender, including identities like bisexual, polysexual, and omnisexual. The terms can be used interchangeably for some, while others note important differences.'
     },
+    {
+      'title': 'Neopronouns',
+      'content':
+          'Gender-neutral pronouns like ze/zir or ey/em used instead of traditional ones like they/them.'
+    },
+    {
+      'title': 'Neurodiversity',
+      'content':
+          'The natural variation in human brain function, including conditions like autism, ADHD, and dyslexia. Celebrates diverse forms of thinking and self-expression without seeking to cure or correct differences.'
+    },
+    {
+      'title': 'Neurodivergent (ND)',
+      'content':
+          'Having a brain that functions differently from societal norms, encompassing various conditions such as autism and dyslexia. The term was coined by activist Kassiane Asasumasu.'
+    },
+    {
+      'title': 'Neurotypical (NT)',
+      'content':
+          'Having neurocognitive functioning that aligns with dominant societal norms.'
+    },
+    {
+      'title': 'Neutrois',
+      'content':
+          'A non-binary gender identity that can include being neutral-gender, null-gender, neither male nor female, genderless, or agender.'
+    },
+    {
+      'title': 'Nonbinary',
+      'content':
+          'A gender identity that moves beyond the male/female binary, encompassing a wide range of expressions and ways of being. It can overlap with concepts like gender expansive and gender non-conforming.'
+    },
   ];
 
   @override
