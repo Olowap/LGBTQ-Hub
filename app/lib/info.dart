@@ -36,11 +36,11 @@ class _InfoState extends State<Info> {
           'A Third Year BS Information Technology Major in Service Management from Batangas State University-TNEU Alangilan Campus. He is passionate in serving the community and charity works. He also play as Middle Blocker in School, Barangay and City tournaments. He always believe that "Everything happens for a reason."',
     ),
     Developer(
-      name: 'Rizabel Lingon',
+      name: 'Rizabel D. Lingon',
       age: 21,
-      location: 'Pallocan West, Batangas City',
-      contactNumber: '+63998-765-4321',
-      imageUrl: 'Info/Joven.jpg',
+      location: 'Sitio Dumuclay Ibaba, Batangas City',
+      contactNumber: '+63',
+      imageUrl: 'Info/Riza.png',
       bio:
           'A Third Year Collage of Batangas State University of Alangilan Campus Batangas City.',
     ),

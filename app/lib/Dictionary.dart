@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 class Dictionary extends StatefulWidget {
   @override
   _DictionaryState createState() => _DictionaryState();
@@ -130,7 +131,6 @@ class _DictionaryState extends State<Dictionary> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(
