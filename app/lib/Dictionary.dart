@@ -548,6 +548,26 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'When people have deeply rooted negative beliefs about what it means to be transgender, nonbinary, and gender nonconforming. Their beliefs affect the way they, the government, organizations, the media, and society generally treat people whose identities don’t fit into typical gender roles.'
     },
+    {
+      'title': 'Undocumented',
+      'content':
+          'People who are born outside of the country to which they immigrated, who do not have documentation that grants legal rights related to residency and/or citizenship.'
+    },
+    {
+      'title': 'Ursula',
+      'content':
+          'Some lesbians, particularly butch dykes, also participate in Bear culture referring to themselves with the distinct label Ursula.'
+    },
+    {
+      'title': 'WLW',
+      'content':
+          'Abbreviation for Women who like Women. This term can include lesbians, bisexual/pansexual/omnisexual women, as well as other identities. Some prefer the term “sapphic”, as it is more inclusive of non-binary folks. See also Sapphic.'
+    },
+    {
+      'title': 'Womxn',
+      'content':
+          'Some womxn spell the word with an “x” as a form of empowerment to move away from the “men” in the “traditional” spelling of women.'
+    },
   ];
 
   @override
