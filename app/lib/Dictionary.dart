@@ -317,6 +317,56 @@ class _DictionaryState extends State<Dictionary> {
       'content':
           'A name used by someone that differs from their legal name. Often adopted by trans and nonbinary people to affirm their gender identity. The term "lived name" is preferred over "preferred name" to avoid the implication that using it is optional, which can lead to deadnaming.'
     },
+    {
+      'title': 'Masculine of Center (MOC)',
+      'content':
+          'A term for individuals, including lesbian/queer women and trans folks, who lean towards the masculine side of the gender spectrum. This includes identities like butch, stud, aggressive/AG, dom, macha, tomboi, and trans-masculine.'
+    },
+    {
+      'title': 'Microaggressions',
+      'content':
+          'Subtle, often unintentional behaviors that convey hostile or derogatory messages about oppressed identities, reinforcing stereotypes and causing harm.'
+    },
+    {
+      'title': 'Misgendering',
+      'content':
+          'Incorrectly attributing a gender to someone that does not align with their gender identity, often through improper pronoun use or gendered language.'
+    },
+    {
+      'title': 'MLM',
+      'content':
+          'Abbreviation for "men who love men," encompassing gay men and men attracted to both men and other genders.'
+    },
+    {
+      'title': 'Monogamy',
+      'content':
+          'The practice of having only one intimate partner at a time, also known as serial monogamy.'
+    },
+    {
+      'title': 'Monosexism',
+      'content':
+          'The belief that monosexuality (attraction to one gender) is superior, leading to the oppression of non-monosexual people.'
+    },
+    {
+      'title': 'Monosexual',
+      'content':
+          'Individuals who are romantically, sexually, or affectionately attracted to one gender only, such as straight or gay people.'
+    },
+    {
+      'title': 'MSM',
+      'content':
+          'Abbreviation for "men who have sex with men," who may or may not identify as gay.'
+    },
+    {
+      'title': 'MTF',
+      'content':
+          '"Male to Female," referring to individuals assigned male at birth who identify or express themselves as feminine. This term is less commonly used in the 2020s, with preferences for terms like "trans woman."'
+    },
+    {
+      'title': 'Multisexual',
+      'content':
+          'An umbrella term for attraction to more than one gender, including identities like bisexual, polysexual, and omnisexual. The terms can be used interchangeably for some, while others note important differences.'
+    },
   ];
 
   @override
