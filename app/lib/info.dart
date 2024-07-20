@@ -65,138 +65,136 @@ class _InfoState extends State<Info> {
   ];
 
   void _showDeveloperDetails(Developer developer) {
-  showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return AlertDialog(
-        contentPadding: EdgeInsets.zero,
-        content: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              SizedBox(height: 8), // Adjust top spacing here
-              Stack(
-                alignment: Alignment.center,
-                children: [
-                  // Rainbow border
-                  Container(
-                    width: 100, // Smaller size
-                    height: 100, // Smaller size
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient: LinearGradient(
-                        colors: [
-                          Colors.red,
-                          Colors.orange,
-                          Colors.yellow,
-                          Colors.green,
-                          Colors.blue,
-                          Colors.indigo,
-                          Colors.purple,
-                          Colors.red,
-                        ],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          contentPadding: EdgeInsets.zero,
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SizedBox(height: 8), // Adjust top spacing here
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    // Rainbow border
+                    Container(
+                      width: 100, // Smaller size
+                      height: 100, // Smaller size
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.red,
+                            Colors.orange,
+                            Colors.yellow,
+                            Colors.green,
+                            Colors.blue,
+                            Colors.indigo,
+                            Colors.purple,
+                            Colors.red,
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
                       ),
                     ),
-                  ),
-                  // Developer image
-                  CircleAvatar(
-                    radius: 45, // Smaller size
-                    backgroundColor: Colors.white,
-                    child: CircleAvatar(
-                      radius: 43,
-                      backgroundImage: AssetImage(developer.imageUrl),
+                    // Developer image
+                    CircleAvatar(
+                      radius: 45, // Smaller size
+                      backgroundColor: Colors.white,
+                      child: CircleAvatar(
+                        radius: 43,
+                        backgroundImage: AssetImage(developer.imageUrl),
+                      ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Text(
-                developer.name,
-                style: GoogleFonts.poppins(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  ],
                 ),
-              ),
-              SizedBox(height: 16),
-              _buildDeveloperDetail(
-                icon: Icons.person,
-                text: 'Name: ${developer.name}',
-              ),
-              _buildDeveloperDetail(
-                icon: Icons.cake,
-                text: 'Age: ${developer.age}',
-              ),
-              _buildDeveloperDetail(
-                icon: Icons.location_on,
-                text: 'Location: ${developer.location}',
-              ),
-              _buildDeveloperDetail(
-                icon: Icons.phone,
-                text: 'Contact: ${developer.contactNumber}',
-              ),
-              SizedBox(height: 8),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                child: Text(
-                  developer.bio,
+                SizedBox(height: 16),
+                Text(
+                  developer.name,
                   style: GoogleFonts.poppins(
-                    fontSize: 14,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
                   ),
-                  textAlign: TextAlign.center,
                 ),
-              ),
-              SizedBox(height: 16),
-              Align(
-                alignment: Alignment.bottomRight,
-                child: TextButton(
+                SizedBox(height: 16),
+                _buildDeveloperDetail(
+                  icon: Icons.person,
+                  text: 'Name: ${developer.name}',
+                ),
+                _buildDeveloperDetail(
+                  icon: Icons.cake,
+                  text: 'Age: ${developer.age}',
+                ),
+                _buildDeveloperDetail(
+                  icon: Icons.location_on,
+                  text: 'Location: ${developer.location}',
+                ),
+                _buildDeveloperDetail(
+                  icon: Icons.phone,
+                  text: 'Contact: ${developer.contactNumber}',
+                ),
+                SizedBox(height: 8),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child: Text(
-                    "Close",
+                    developer.bio,
                     style: GoogleFonts.poppins(
-                      fontSize: 16,
+                      fontSize: 14,
                     ),
+                    textAlign: TextAlign.center,
                   ),
-                  onPressed: () => Navigator.of(context).pop(),
                 ),
-              ),
-            ],
-          ),
-        ),
-      );
-    },
-  );
-}
-
-Widget _buildDeveloperDetail({
-  required IconData icon,
-  required String text,
-}) {
-  return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-    child: Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Icon(
-          icon,
-          size: 20,
-          color: Colors.black,
-        ),
-        SizedBox(width: 8),
-        Expanded(
-          child: Text(
-            text,
-            style: GoogleFonts.poppins(
-              fontSize: 14,
+                SizedBox(height: 16),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: TextButton(
+                    child: Text(
+                      "Close",
+                      style: GoogleFonts.poppins(
+                        fontSize: 16,
+                      ),
+                    ),
+                    onPressed: () => Navigator.of(context).pop(),
+                  ),
+                ),
+              ],
             ),
           ),
-        ),
-      ],
-    ),
-  );
-}
+        );
+      },
+    );
+  }
 
-
+  Widget _buildDeveloperDetail({
+    required IconData icon,
+    required String text,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(
+            icon,
+            size: 20,
+            color: Colors.black,
+          ),
+          SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              text,
+              style: GoogleFonts.poppins(
+                fontSize: 14,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 
   Widget _buildDeveloperCard(Developer developer) {
     return GestureDetector(
@@ -274,7 +272,7 @@ Widget _buildDeveloperDetail({
     );
   }
 
-  Widget _buildDeveloperDetail({
+  Widget _buildDeveloperDetail_({
     required IconData icon,
     required String text,
   }) {
