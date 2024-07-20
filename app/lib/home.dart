@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'homeVideo.dart';
 class Home extends StatelessWidget {
   final List<Map<String, String>> prideOrganizations = [
     {"image": "Home/MetroPride.jpg", "name": "Metro Manila Pride"},
@@ -12,23 +12,26 @@ class Home extends StatelessWidget {
   ];
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
-      body: Center(
-        child: SingleChildScrollView(
-          padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              const SizedBox(height: 20),
-              Center(
-                child: Image.asset(
-                  "Home/front.png", // Replace with your image asset path
-                  width: MediaQuery.of(context).size.width * 0.9, // Responsive width
-                  height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+Widget build(BuildContext context) {
+  return Scaffold(
+    backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
+    body: Center(
+      child: SingleChildScrollView(
+        padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            const SizedBox(height: 20),
+            VideoPlayerWidget(videoUrl: 'Home/Pvideo.mp4'),
+
+            SizedBox(height: 80), 
+            SizedBox(height: 90), 
+
+            Image.asset(
+              "Home/front.png", 
+              width: MediaQuery.of(context).size.width * 0.9, // Responsive width
+              height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                 ),
-              ),
               const SizedBox(height: 20),
               Container(
                 padding: EdgeInsets.all(16),
