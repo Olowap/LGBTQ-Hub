@@ -27,7 +27,7 @@ class Info extends StatefulWidget {
 class _InfoState extends State<Info> {
   List<Developer> developers = [
     Developer(
-      name: 'Joven Catilo',
+      name: 'Joven  C. Catilo',
       age: 21,
       location: 'Pallocan West, Batangas City',
       contactNumber: '+639203549508',
@@ -65,52 +65,59 @@ class _InfoState extends State<Info> {
   ];
 
   void _showDeveloperDetails(Developer developer) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          contentPadding: EdgeInsets.zero,
-          content: Column(
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        contentPadding: EdgeInsets.zero,
+        content: SingleChildScrollView(
+          child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              SizedBox(height: 8), // Adjust top spacing here
               Stack(
+                alignment: Alignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20.0, right: 16.0),
-                    child: Align(
-                      alignment: Alignment.topRight,
-                      child: IconButton(
-                        icon: Icon(Icons.close),
-                        onPressed: () => Navigator.of(context).pop(),
+                  // Rainbow border
+                  Container(
+                    width: 100, // Smaller size
+                    height: 100, // Smaller size
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: LinearGradient(
+                        colors: [
+                          Colors.red,
+                          Colors.orange,
+                          Colors.yellow,
+                          Colors.green,
+                          Colors.blue,
+                          Colors.indigo,
+                          Colors.purple,
+                          Colors.red,
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Center(
-                      child: Column(
-                        children: [
-                          CircleAvatar(
-                            radius: 50,
-                            backgroundColor: Colors.transparent,
-                            child: CircleAvatar(
-                              radius: 48,
-                              backgroundImage: AssetImage(developer.imageUrl),
-                            ),
-                          ),
-                          SizedBox(height: 16),
-                          Text(
-                            developer.name,
-                            style: GoogleFonts.poppins(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
+                  // Developer image
+                  CircleAvatar(
+                    radius: 45, // Smaller size
+                    backgroundColor: Colors.white,
+                    child: CircleAvatar(
+                      radius: 43,
+                      backgroundImage: AssetImage(developer.imageUrl),
                     ),
                   ),
                 ],
+              ),
+              SizedBox(height: 16),
+              Text(
+                developer.name,
+                style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               SizedBox(height: 16),
               _buildDeveloperDetail(
@@ -141,12 +148,55 @@ class _InfoState extends State<Info> {
                 ),
               ),
               SizedBox(height: 16),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: TextButton(
+                  child: Text(
+                    "Close",
+                    style: GoogleFonts.poppins(
+                      fontSize: 16,
+                    ),
+                  ),
+                  onPressed: () => Navigator.of(context).pop(),
+                ),
+              ),
             ],
           ),
-        );
-      },
-    );
-  }
+        ),
+      );
+    },
+  );
+}
+
+Widget _buildDeveloperDetail({
+  required IconData icon,
+  required String text,
+}) {
+  return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+    child: Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Icon(
+          icon,
+          size: 20,
+          color: Colors.black,
+        ),
+        SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            text,
+            style: GoogleFonts.poppins(
+              fontSize: 14,
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
+
 
   Widget _buildDeveloperCard(Developer developer) {
     return GestureDetector(
@@ -155,18 +205,56 @@ class _InfoState extends State<Info> {
         elevation: 3,
         margin: EdgeInsets.all(8),
         child: Container(
-          width: 250,
+          width: 300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 16),
-              CircleAvatar(
-                radius: 75,
-                backgroundColor: Colors.transparent,
-                child: CircleAvatar(
-                  radius: 73,
-                  backgroundImage: AssetImage(developer.imageUrl),
-                ),
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  // Rainbow border
+                  Container(
+                    width: 150,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: LinearGradient(
+                        colors: [
+                          Colors.red,
+                          Colors.orange,
+                          Colors.yellow,
+                          Colors.green,
+                          Colors.blue,
+                          Colors.indigo,
+                          Colors.purple,
+                          Colors.red,
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                    ),
+                    child: Center(
+                      child: Container(
+                        width: 145,
+                        height: 145,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  // Developer image
+                  CircleAvatar(
+                    radius: 73,
+                    backgroundColor: Colors.transparent,
+                    child: CircleAvatar(
+                      radius: 71,
+                      backgroundImage: AssetImage(developer.imageUrl),
+                    ),
+                  ),
+                ],
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -221,7 +309,7 @@ class _InfoState extends State<Info> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 'About Us',
@@ -229,10 +317,11 @@ class _InfoState extends State<Info> {
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 16),
               Text(
-                'We are a team of developers working together to create a Dictionary applications. Our team is passionate about technology and innovation. We strive to deliver the best user experience through our applications.',
+                'We are a team of developers working together to create a Dictionary application. Our team is passionate about technology and innovation. We strive to deliver the best user experience through our applications.',
                 style: GoogleFonts.poppins(
                   fontSize: 16,
                 ),
@@ -245,7 +334,7 @@ class _InfoState extends State<Info> {
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
-                textAlign: TextAlign.justify,
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 16),
               Text(
@@ -256,24 +345,13 @@ class _InfoState extends State<Info> {
                 textAlign: TextAlign.justify,
               ),
               SizedBox(height: 32),
-              Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.group,
-                      size: 30,
-                    ),
-                    SizedBox(width: 16),
-                    Text(
-                      'Meet the Developers',
-                      style: GoogleFonts.poppins(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
+              Text(
+                'Meet the Developers',
+                style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 16),
               SingleChildScrollView(

@@ -2,14 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
+  final List<Map<String, String>> prideOrganizations = [
+    {"image": "Home/MetroPride.jpg", "name": "Metro Manila Pride"},
+    {"image": "Home/lys.png", "name": "LoveYourself"},
+    {"image": "Home/UPBabaylan.png", "name": "UP Babaylan"},
+    {"image": "Home/Galang.png", "name": "Galang"},
+    {"image": "Home/Ladlad.jpg", "name": "Ladlad"},
+    {"image": "Home/RainbowRights.png", "name": "Rainbow Rights"},
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          Color.fromARGB(255, 250, 250, 250), // Light background color
+      backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
       body: Center(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
@@ -17,11 +25,10 @@ class Home extends StatelessWidget {
               Center(
                 child: Image.asset(
                   "Home/front.png", // Replace with your image asset path
-                  width: 500, // Full width
-                  height: 250, // Adjust height as needed
+                  width: MediaQuery.of(context).size.width * 0.9, // Responsive width
+                  height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                 ),
               ),
-              const SizedBox(height: 20),
               const SizedBox(height: 20),
               Container(
                 padding: EdgeInsets.all(16),
@@ -42,15 +49,16 @@ class Home extends StatelessWidget {
                     Center(
                       child: Image.asset(
                         "Home/Rainbow.png", // Replace with your image asset path
-                        width: double.infinity, // Full width
-                        height: 250, // Adjust height as needed
+                        width: double.infinity,
+                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
+                    const SizedBox(height: 20),
                     Text(
                       'What is LGBTQ+?',
                       style: GoogleFonts.poppins(
-                        fontSize: 28,
+                        fontSize: MediaQuery.of(context).size.width * 0.07,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
@@ -60,7 +68,7 @@ class Home extends StatelessWidget {
                     Text(
                       'LGBTQIA+ stands for Lesbian, Gay, Bisexual, Transgender, queer (or sometimes questioning), intersex, asexual, and others.',
                       style: GoogleFonts.poppins(
-                        fontSize: 15,
+                        fontSize: MediaQuery.of(context).size.width * 0.04,
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.justify,
@@ -69,25 +77,12 @@ class Home extends StatelessWidget {
                     Text(
                       'The "plus" represents other sexual identities, including pansexual and Two-Spirit. The first four letters of the acronym have been used since the 1990s, but in recent years there has been an increased awareness of the need to be inclusive of other sexual identities to offer better representation.',
                       style: GoogleFonts.poppins(
-                        fontSize: 15,
+                        fontSize: MediaQuery.of(context).size.width * 0.04,
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.justify,
                     ),
                     const SizedBox(height: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        _showReadMoreDialog(
-                          context,
-                          'LGBTQIA+ stands for Lesbian, Gay, Bisexual, Transgender, queer (or sometimes questioning), intersex, asexual, and others.',
-                          'LGBTQIA+ More Info',
-                        );
-                      },
-                      child: Text(
-                        'Read More',
-                        style: GoogleFonts.poppins(),
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -111,8 +106,8 @@ class Home extends StatelessWidget {
                     Center(
                       child: Image.asset(
                         "Home/pride.png", // Replace with your image asset path
-                        width: double.infinity, // Full width
-                        height: 250, // Adjust height as needed
+                        width: double.infinity,
+                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -120,7 +115,7 @@ class Home extends StatelessWidget {
                     Text(
                       'Why Is Pride Month Celebrated in June?',
                       style: GoogleFonts.poppins(
-                        fontSize: 28,
+                        fontSize: MediaQuery.of(context).size.width * 0.07,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
@@ -130,7 +125,7 @@ class Home extends StatelessWidget {
                     Text(
                       'Colorful uplifting parades with floats and celebrities, joyous festivals, workshops, picnics, and parties are among the principal components of LGBTQ Pride Month, also called Gay Pride, which is celebrated in June in the United States and elsewhere around the world.',
                       style: GoogleFonts.poppins(
-                        fontSize: 15,
+                        fontSize: MediaQuery.of(context).size.width * 0.04,
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.justify,
@@ -157,7 +152,7 @@ class Home extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(15),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.3),
@@ -172,25 +167,60 @@ class Home extends StatelessWidget {
                     Text(
                       'Pride Organizations',
                       style: GoogleFonts.poppins(
-                        fontSize: 28,
+                        fontSize: MediaQuery.of(context).size.width * 0.07,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        _showReadMoreDialog(
-                          context,
-                          'Here you can find more information about various Pride organizations and how they contribute to the LGBTQ+ community.',
-                          'Pride Organizations',
+                    GridView.builder(
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 10,
+                        mainAxisSpacing: 10,
+                        childAspectRatio: 3 / 2,
+                      ),
+                      itemCount: prideOrganizations.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.3),
+                                spreadRadius: 3,
+                                blurRadius: 7,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              RainbowBorderCircleAvatar(
+                                radius: 30,
+                                imagePath: prideOrganizations[index]['image']!,
+                              ),
+                              const SizedBox(height: 8),
+                              Flexible(
+                                child: Text(
+                                  prideOrganizations[index]['name']!,
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 9,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                            ],
+                          ),
                         );
                       },
-                      child: Text(
-                        'Read More',
-                        style: GoogleFonts.poppins(),
-                      ),
                     ),
                   ],
                 ),
@@ -241,6 +271,49 @@ class Home extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+class RainbowBorderCircleAvatar extends StatelessWidget {
+  final double radius;
+  final String imagePath;
+
+  const RainbowBorderCircleAvatar({
+    Key? key,
+    required this.radius,
+    required this.imagePath,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: radius * 2,
+      height: radius * 2,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: SweepGradient(
+          colors: [
+            Colors.red,
+            Colors.orange,
+            Colors.yellow,
+            Colors.green,
+            Colors.blue,
+            Colors.indigo,
+            Colors.purple,
+            Colors.red,
+          ],
+          startAngle: 0.0,
+          endAngle: 3.14 * 2,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(3.0),
+        child: CircleAvatar(
+          radius: radius - 3,
+          backgroundImage: AssetImage(imagePath),
+        ),
+      ),
     );
   }
 }
