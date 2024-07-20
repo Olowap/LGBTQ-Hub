@@ -569,7 +569,6 @@ class _DictionaryState extends State<Dictionary> {
           'Some womxn spell the word with an “x” as a form of empowerment to move away from the “men” in the “traditional” spelling of women.'
     },
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
