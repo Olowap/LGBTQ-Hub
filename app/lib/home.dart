@@ -128,7 +128,7 @@ class Home extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
                     Text(
-                      'Colorful uplifting parades with floats and celebrities, joyous festivals, workshops, picnics, and parties are among the principal components of LGBTQ Pride Month, also called Gay Pride, which is celebrated in June in the United States and elsewhere around the world.',
+                      'Colorful eme lang uplifting parades with floats and celebrities, joyous festivals, workshops, picnics, and parties are among the principal components of LGBTQ Pride Month, also called Gay Pride, which is celebrated in June in the United States and elsewhere around the world.',
                       style: GoogleFonts.poppins(
                         fontSize: MediaQuery.of(context).size.width * 0.04,
                         color: Colors.black,
