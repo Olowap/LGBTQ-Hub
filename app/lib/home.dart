@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'homeVideo.dart';
+
 class Home extends StatelessWidget {
   final List<Map<String, String>> prideOrganizations = [
     {"image": "Home/MetroPride.jpg", "name": "Metro Manila Pride"},
@@ -12,27 +13,54 @@ class Home extends StatelessWidget {
   ];
 
   @override
-Widget build(BuildContext context) {
-  return Scaffold(
-    backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
-    body: Center(
-      child: SingleChildScrollView(
-        padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            const SizedBox(height: 20),
-            VideoPlayerWidget(videoUrl: 'Home/Pvideo.mp4'),
-
-            SizedBox(height: 80), 
-            SizedBox(height: 90), 
-
-            Image.asset(
-              "Home/front.png", 
-              width: MediaQuery.of(context).size.width * 0.9, // Responsive width
-              height: MediaQuery.of(context).size.width * 0.5, // Responsive height
-                ),
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 250, 250, 250),
+      // Light background color
+      body: Center(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
               const SizedBox(height: 20),
+              Stack(
+                alignment: Alignment.topCenter,
+                children: [
+                  VideoPlayerWidget(videoUrl: 'Home/Pvideo.mp4'),
+                  Positioned(
+                    top: 20,
+                    child: Column(
+                      children: [
+                        Text(
+                          'Be PROUD. Be YOU',
+                          style: GoogleFonts.poppins(
+                            fontSize: MediaQuery.of(context).size.width * 0.08,
+                            fontWeight: FontWeight.bold,
+                            foreground: Paint()
+                              ..shader = LinearGradient(
+                                colors: <Color>[
+                                  Colors.red,
+                                  Colors.orange,
+                                  Colors.yellow,
+                                  Colors.green,
+                                  Colors.blue,
+                                  Colors.indigo,
+                                  Colors.purple,
+                                  Colors.red,
+                                ],
+                              ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 80),
+              SizedBox(height: 90),
+              const SizedBox(height: 30),
               Container(
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -155,7 +183,63 @@ Widget build(BuildContext context) {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.3),
+                      spreadRadius: 3,
+                      blurRadius: 7,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
+                ),
+                child: Column(
+                  children: [
+                    Text(
+                      'LGBT RIGHTS are HUMAN RIGHTS',
+                      style: GoogleFonts.poppins(
+                        fontSize: MediaQuery.of(context).size.width * 0.07,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 10),
+                    Image.asset(
+                      'Home/SOGIE_Image.png', // Replace with your image asset path
+                      width: double.infinity,
+                      height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      'Pass the SOGIE Equality Law Now!',
+                      style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 20),
+                    Text(
+                      'LGBTQIA+ individuals in the Philippines face daily discrimination, including social exclusion, harassment, and barriers to essential services. Despite the SOGIE Equality Bill being proposed over 23 years ago, it has yet to pass. The bill aims to ensure equal rights and protection for people regardless of sexual orientation, gender identity, and expression, and address systemic inequalities. The call is for the Philippine Senate and House of Representatives to urgently pass this legislation to uphold human dignity and equality.',
+                      style: GoogleFonts.poppins(
+                        fontSize: 13, // Fixed font size to 13
+                        color: Colors.black,
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    const SizedBox(height: 10),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 25),
+              Container(
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.3),
