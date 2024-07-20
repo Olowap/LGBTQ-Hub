@@ -14,8 +14,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          Color.fromARGB(255, 250, 250, 250), // Light background color
+      backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
       body: Center(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
@@ -26,10 +25,8 @@ class Home extends StatelessWidget {
               Center(
                 child: Image.asset(
                   "Home/front.png", // Replace with your image asset path
-                  width: MediaQuery.of(context).size.width *
-                      0.9, // Responsive width
-                  height: MediaQuery.of(context).size.width *
-                      0.5, // Responsive height
+                  width: MediaQuery.of(context).size.width * 0.9, // Responsive width
+                  height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                 ),
               ),
               const SizedBox(height: 20),
@@ -53,14 +50,13 @@ class Home extends StatelessWidget {
                       child: Image.asset(
                         "Home/Rainbow.png", // Replace with your image asset path
                         width: double.infinity,
-                        height: MediaQuery.of(context).size.width *
-                            0.5, // Responsive height
+                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      'What is LGBTQ+?',
+                      'What is LGBTQIA+?',
                       style: GoogleFonts.poppins(
                         fontSize: MediaQuery.of(context).size.width * 0.07,
                         fontWeight: FontWeight.bold,
@@ -72,7 +68,7 @@ class Home extends StatelessWidget {
                     Text(
                       'LGBTQIA+ stands for Lesbian, Gay, Bisexual, Transgender, queer (or sometimes questioning), intersex, asexual, and others.',
                       style: GoogleFonts.poppins(
-                        fontSize: MediaQuery.of(context).size.width * 0.04,
+                        fontSize: 13, // Fixed font size to 13
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.justify,
@@ -81,7 +77,7 @@ class Home extends StatelessWidget {
                     Text(
                       'The "plus" represents other sexual identities, including pansexual and Two-Spirit. The first four letters of the acronym have been used since the 1990s, but in recent years there has been an increased awareness of the need to be inclusive of other sexual identities to offer better representation.',
                       style: GoogleFonts.poppins(
-                        fontSize: MediaQuery.of(context).size.width * 0.04,
+                        fontSize: 13, // Fixed font size to 13
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.justify,
@@ -111,8 +107,7 @@ class Home extends StatelessWidget {
                       child: Image.asset(
                         "Home/pride.png", // Replace with your image asset path
                         width: double.infinity,
-                        height: MediaQuery.of(context).size.width *
-                            0.5, // Responsive height
+                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -130,7 +125,7 @@ class Home extends StatelessWidget {
                     Text(
                       'Colorful eme lang uplifting parades with floats and celebrities, joyous festivals, workshops, picnics, and parties are among the principal components of LGBTQ Pride Month, also called Gay Pride, which is celebrated in June in the United States and elsewhere around the world.',
                       style: GoogleFonts.poppins(
-                        fontSize: MediaQuery.of(context).size.width * 0.04,
+                        fontSize: 13, // Fixed font size to 13
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.justify,

@@ -321,7 +321,7 @@ class _InfoState extends State<Info> {
               Text(
                 'We are a team of developers working together to create a Dictionary application. Our team is passionate about technology and innovation. We strive to deliver the best user experience through our applications.',
                 style: GoogleFonts.poppins(
-                  fontSize: 16,
+                  fontSize: 13,
                 ),
                 textAlign: TextAlign.justify,
               ),
@@ -338,7 +338,7 @@ class _InfoState extends State<Info> {
               Text(
                 'In recent years, there has been a growing recognition of the need for greater understanding and acceptance of LGBTQ+ identities and experiences. One powerful tool to promote this understanding is an LGBTQ+ dictionary. Such a dictionary provides clear definitions and explanations of terms related to gender and sexual identities, helping to educate, foster respect, and create an inclusive environment. This essay will explore the importance of an LGBTQ+ dictionary, the steps involved in creating one, and the considerations necessary to ensure it is comprehensive and inclusive.',
                 style: GoogleFonts.poppins(
-                  fontSize: 16,
+                  fontSize: 13,
                 ),
                 textAlign: TextAlign.justify,
               ),
@@ -346,7 +346,7 @@ class _InfoState extends State<Info> {
               Text(
                 'Meet the Developers',
                 style: GoogleFonts.poppins(
-                  fontSize: 18,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
