@@ -6,7 +6,8 @@ class SplashScreen extends StatefulWidget {
   _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
+class _SplashScreenState extends State<SplashScreen>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 
@@ -41,13 +42,15 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Splash/splash.png'), // Replace with your image asset path
+                image: AssetImage(
+                    'Splash/splash.png'), // Replace with your image asset path
                 fit: BoxFit.cover,
               ),
             ),
           ),
           Container(
-            color: Colors.white.withOpacity(0.8), // Adjust the opacity value as needed
+            color: Colors.white
+                .withOpacity(0.8), // Adjust the opacity value as needed
           ),
           Center(
             child: FadeTransition(

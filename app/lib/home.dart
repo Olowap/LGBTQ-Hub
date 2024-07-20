@@ -14,7 +14,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 250, 250, 250), // Light background color
+      backgroundColor:
+          Color.fromARGB(255, 250, 250, 250), // Light background color
       body: Center(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
@@ -25,8 +26,10 @@ class Home extends StatelessWidget {
               Center(
                 child: Image.asset(
                   "Home/front.png", // Replace with your image asset path
-                  width: MediaQuery.of(context).size.width * 0.9, // Responsive width
-                  height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+                  width: MediaQuery.of(context).size.width *
+                      0.9, // Responsive width
+                  height: MediaQuery.of(context).size.width *
+                      0.5, // Responsive height
                 ),
               ),
               const SizedBox(height: 20),
@@ -50,7 +53,8 @@ class Home extends StatelessWidget {
                       child: Image.asset(
                         "Home/Rainbow.png", // Replace with your image asset path
                         width: double.infinity,
-                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+                        height: MediaQuery.of(context).size.width *
+                            0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -107,7 +111,8 @@ class Home extends StatelessWidget {
                       child: Image.asset(
                         "Home/pride.png", // Replace with your image asset path
                         width: double.infinity,
-                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+                        height: MediaQuery.of(context).size.width *
+                            0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
