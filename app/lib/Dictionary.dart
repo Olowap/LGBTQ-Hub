@@ -15,7 +15,7 @@ class _DictionaryState extends State<Dictionary> {
     {
       'title': 'Ability',
       'content':
-          'The quality of having the means or skill to do something. Ability is not permanent, can fluctuate throughout one’s life, and is another aspect of diversity in our communities. Disabilities do not necessarily limit people unless society imposes assumptions that do not account for the variation in people’s abilities.'
+          'The quality of havings the means or skill to do something. Ability is not permanent, can fluctuate throughout one’s life, and is another aspect of diversity in our communities. Disabilities do not necessarily limit people unless society imposes assumptions that do not account for the variation in people’s abilities.'
     },
     {
       'title': 'Ableism',
