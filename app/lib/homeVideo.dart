@@ -34,6 +34,6 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
   Widget build(BuildContext context) {
     return _controller.value.isInitialized
         ? VideoPlayer(_controller)
-        : Container(); // You can show a placeholder or loading indicator here
+        : Container(); 
   }
 }
