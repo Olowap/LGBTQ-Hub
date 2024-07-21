@@ -206,7 +206,7 @@ class Home extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Image.asset(
-                      'Home/SOGIE_Image.png', // Replace with your image asset path
+                      'Home/Sogie.png', // Replace with your image asset path
                       width: double.infinity,
                       height: MediaQuery.of(context).size.width * 0.5, // Responsive height
                       fit: BoxFit.cover,

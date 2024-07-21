@@ -569,6 +569,8 @@ class _DictionaryState extends State<Dictionary> {
           'Some womxn spell the word with an “x” as a form of empowerment to move away from the “men” in the “traditional” spelling of women.'
     },
   ];
+
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -585,6 +587,19 @@ class _DictionaryState extends State<Dictionary> {
                 style: GoogleFonts.poppins(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
+                  foreground: Paint()
+                    ..shader = LinearGradient(
+                     colors: <Color>[
+                      Colors.red,
+                      Colors.orange,
+                      Colors.yellow,
+                      Colors.green,
+                      Colors.blue,
+                      Colors.indigo,
+                      Colors.purple,
+                      Colors.red,
+                    ],
+                  ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
                 ),
               ),
             ),
@@ -703,3 +718,4 @@ class _DictionaryState extends State<Dictionary> {
     );
   }
 }
+
