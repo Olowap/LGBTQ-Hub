@@ -23,16 +23,7 @@ class Home extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              const SizedBox(height: 20),
-              Stack(
-                alignment: Alignment.topCenter,
-                children: [
-                  VideoPlayerWidget(videoUrl: 'Home/Pvideo.mp4'),
-                  Positioned(
-                    top: 20,
-                    child: Column(
-                      children: [
-                        Text(
+              Text(
                           'Be PROUD. Be YOU',
                           style: GoogleFonts.poppins(
                             fontSize: MediaQuery.of(context).size.width * 0.08,
@@ -53,13 +44,16 @@ class Home extends StatelessWidget {
                           ),
                           textAlign: TextAlign.center,
                         ),
-                      ],
-                    ),
-                  ),
+
+              const SizedBox(height: 15),
+              Stack(
+                alignment: Alignment.topCenter,
+                children: [
+                  VideoPlayerWidget(videoUrl: 'Home/Pvideo.mp4'),
                 ],
               ),
-              SizedBox(height: 80),
               SizedBox(height: 90),
+              SizedBox(height: 95),
               const SizedBox(height: 30),
               Container(
                 padding: EdgeInsets.all(16),
