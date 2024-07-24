@@ -52,8 +52,6 @@ class Home extends StatelessWidget {
                   VideoPlayerWidget(videoUrl: 'Home/Pvideo.mp4'),
                 ],
               ),
-              SizedBox(height: 90),
-              SizedBox(height: 95),
               const SizedBox(height: 30),
               Container(
                 padding: EdgeInsets.all(16),
