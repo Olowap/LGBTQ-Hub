@@ -718,4 +718,3 @@ class _DictionaryState extends State<Dictionary> {
     );
   }
 }
-

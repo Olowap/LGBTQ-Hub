@@ -309,14 +309,28 @@ class _InfoState extends State<Info> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                'About Us',
-                style: GoogleFonts.poppins(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.center,
-              ),
+               Text(
+                          'About Us',
+                          style: GoogleFonts.poppins(
+                            fontSize: MediaQuery.of(context).size.width * 0.08,
+                            fontWeight: FontWeight.bold,
+                            foreground: Paint()
+                              ..shader = LinearGradient(
+                                colors: <Color>[
+                                  Colors.red,
+                                  Colors.orange,
+                                  Colors.yellow,
+                                  Colors.green,
+                                  Colors.blue,
+                                  Colors.indigo,
+                                  Colors.purple,
+                                  Colors.red,
+                                ],
+                              ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+
               SizedBox(height: 16),
               Text(
                 'We are a team of developers working together to create a Dictionary application. Our team is passionate about technology and innovation. We strive to deliver the best user experience through our applications.',
