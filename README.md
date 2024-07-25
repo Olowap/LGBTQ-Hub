@@ -33,10 +33,16 @@ About
 
 ![image](https://github.com/user-attachments/assets/37b5a3cb-ffcc-4156-a536-ba8abad90f83)
 
+# Requirements
+
+- Installed Flutter Extension on VS code
+- Installed Dart Extension on VS code
+- Download SDK resources
 
 # Developers
 
 ![image](https://github.com/user-attachments/assets/b0db5ee8-49b9-4448-ab2c-2bdf078ee55f)
+
 
 # References: 
 
