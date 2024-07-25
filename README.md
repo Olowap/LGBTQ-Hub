@@ -43,6 +43,10 @@ About
 
 ![image](https://github.com/user-attachments/assets/b0db5ee8-49b9-4448-ab2c-2bdf078ee55f)
 
+# License
+
+- Credit for Developers
+
 
 # References: 
 
