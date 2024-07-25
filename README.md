@@ -1,9 +1,10 @@
 - LGBTQHUB is an information System that will allows you to be educated about LGBTQ community.
 
-#OUTPUT
+# OUTPUT
 
 Home
-![image](https://github.com/user-attachments/assets/b8d710b8-05cf-4752-9fcc-dde14442b0ef)
+
+![image](https://github.com/user-attachments/assets/3079eb57-da1b-4ea4-b47f-838606ed7344)
 
 
 
