@@ -19,7 +19,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
     super.initState();
     _controller = VideoPlayerController.asset(widget.videoUrl)
       ..initialize().then((_) {
-         _controller.play();
+        _controller.play();
         setState(() {});
       });
   }
@@ -48,7 +48,10 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
         AspectRatio(
           aspectRatio: _controller.value.aspectRatio,
           child: _controller.value.isInitialized
-              ? VideoPlayer(_controller)
+              ? ClipRRect(
+                  borderRadius: BorderRadius.circular(12.0),
+                  child: VideoPlayer(_controller),
+                )
               : Container(),
         ),
         SizedBox(height: 3),
