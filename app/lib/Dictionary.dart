@@ -570,7 +570,6 @@ class _DictionaryState extends State<Dictionary> {
     },
   ];
 
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -589,17 +588,17 @@ class _DictionaryState extends State<Dictionary> {
                   fontWeight: FontWeight.bold,
                   foreground: Paint()
                     ..shader = LinearGradient(
-                     colors: <Color>[
-                      Colors.red,
-                      Colors.orange,
-                      Colors.yellow,
-                      Colors.green,
-                      Colors.blue,
-                      Colors.indigo,
-                      Colors.purple,
-                      Colors.red,
-                    ],
-                  ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+                      colors: <Color>[
+                        Colors.red,
+                        Colors.orange,
+                        Colors.yellow,
+                        Colors.green,
+                        Colors.blue,
+                        Colors.indigo,
+                        Colors.purple,
+                        Colors.red,
+                      ],
+                    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
                 ),
               ),
             ),
@@ -692,11 +691,20 @@ class _DictionaryState extends State<Dictionary> {
                     ),
                     actions: <Widget>[
                       TextButton(
-                        child: Text('Close'),
+                        style: TextButton.styleFrom(
+                          foregroundColor:
+                              Colors.black, // Set the text color to black
+                        ),
+                        child: Text(
+                          'Close',
+                          style: GoogleFonts.poppins(
+                            fontSize: 15,
+                          ),
+                        ),
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                      ),
+                      )
                     ],
                   );
                 },

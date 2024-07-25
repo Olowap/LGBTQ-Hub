@@ -24,27 +24,26 @@ class Home extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                          'Be PROUD. Be YOU',
-                          style: GoogleFonts.poppins(
-                            fontSize: MediaQuery.of(context).size.width * 0.08,
-                            fontWeight: FontWeight.bold,
-                            foreground: Paint()
-                              ..shader = LinearGradient(
-                                colors: <Color>[
-                                  Colors.red,
-                                  Colors.orange,
-                                  Colors.yellow,
-                                  Colors.green,
-                                  Colors.blue,
-                                  Colors.indigo,
-                                  Colors.purple,
-                                  Colors.red,
-                                ],
-                              ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-
+                'Be PROUD. Be YOU',
+                style: GoogleFonts.poppins(
+                  fontSize: MediaQuery.of(context).size.width * 0.08,
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()
+                    ..shader = LinearGradient(
+                      colors: <Color>[
+                        Colors.red,
+                        Colors.orange,
+                        Colors.yellow,
+                        Colors.green,
+                        Colors.blue,
+                        Colors.indigo,
+                        Colors.purple,
+                        Colors.red,
+                      ],
+                    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 15),
               Stack(
                 alignment: Alignment.topCenter,
@@ -73,7 +72,8 @@ class Home extends StatelessWidget {
                       child: Image.asset(
                         "Home/Rainbow.png", // Replace with your image asset path
                         width: double.infinity,
-                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+                        height: MediaQuery.of(context).size.width *
+                            0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -130,7 +130,8 @@ class Home extends StatelessWidget {
                       child: Image.asset(
                         "Home/pride.png", // Replace with your image asset path
                         width: double.infinity,
-                        height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+                        height: MediaQuery.of(context).size.width *
+                            0.5, // Responsive height
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -200,7 +201,8 @@ class Home extends StatelessWidget {
                     Image.asset(
                       'Home/Sogie.png', // Replace with your image asset path
                       width: double.infinity,
-                      height: MediaQuery.of(context).size.width * 0.5, // Responsive height
+                      height: MediaQuery.of(context).size.width *
+                          0.5, // Responsive height
                       fit: BoxFit.cover,
                     ),
                     const SizedBox(height: 10),
