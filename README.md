@@ -1,5 +1,5 @@
 # LGBTQHUB
-- is an information System that will allows you to be educated about LGBTQ community.An LGBTQ+ dictionary is more than just a collection of terms; it’s a vital resource for fostering understanding, acceptance, and inclusion in our society. Imagine navigating through a world where your identity is constantly questioned or misunderstood. For many within the LGBTQ+ community, this is a daily reality. This comprehensive reference tool serves as a bridge, connecting individuals who may not be familiar with the diverse range of identities and experiences within the LGBTQ+ community, helping them to learn, understand, and empathize.
+- is an information System that will allows you to be educated about LGBTQ community.An LGBTQ+ dictionary is more than just a collection of terms it’s a vital resource for fostering understanding, acceptance, and inclusion in our society. Imagine navigating through a world where your identity is constantly questioned or misunderstood. For many within the LGBTQ+ community, this is a daily reality. This comprehensive reference tool serves as a bridge, connecting individuals who may not be familiar with the diverse range of identities and experiences within the LGBTQ+ community, helping them to learn, understand, and empathize.
 
 # INTRODUCTION
 
