@@ -18,6 +18,12 @@ Pride Dictionary
 ![image](https://github.com/user-attachments/assets/924d0d12-2888-4aa6-a37a-c745d0fcfb1d)
 
 
+About
+
+![image](https://github.com/user-attachments/assets/37b5a3cb-ffcc-4156-a536-ba8abad90f83)
+
+
+
 
 
 References: 
