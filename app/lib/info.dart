@@ -27,7 +27,7 @@ class Info extends StatefulWidget {
 class _InfoState extends State<Info> {
   List<Developer> developers = [
     Developer(
-      name: 'Joven  C. Catilo',
+      name: 'Joven C. Catilo',
       age: 21,
       location: 'Pallocan West, Batangas City',
       contactNumber: '+639203549508',
@@ -309,28 +309,27 @@ class _InfoState extends State<Info> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-               Text(
-                          'About Us',
-                          style: GoogleFonts.poppins(
-                            fontSize: MediaQuery.of(context).size.width * 0.08,
-                            fontWeight: FontWeight.bold,
-                            foreground: Paint()
-                              ..shader = LinearGradient(
-                                colors: <Color>[
-                                  Colors.red,
-                                  Colors.orange,
-                                  Colors.yellow,
-                                  Colors.green,
-                                  Colors.blue,
-                                  Colors.indigo,
-                                  Colors.purple,
-                                  Colors.red,
-                                ],
-                              ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-
+              Text(
+                'About Us',
+                style: GoogleFonts.poppins(
+                  fontSize: MediaQuery.of(context).size.width * 0.08,
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()
+                    ..shader = LinearGradient(
+                      colors: <Color>[
+                        Colors.red,
+                        Colors.orange,
+                        Colors.yellow,
+                        Colors.green,
+                        Colors.blue,
+                        Colors.indigo,
+                        Colors.purple,
+                        Colors.red,
+                      ],
+                    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+                ),
+                textAlign: TextAlign.center,
+              ),
               SizedBox(height: 16),
               Text(
                 'We are a team of developers working together to create a Dictionary application. Our team is passionate about technology and innovation. We strive to deliver the best user experience through our applications.',
@@ -351,6 +350,40 @@ class _InfoState extends State<Info> {
               SizedBox(height: 16),
               Text(
                 'In recent years, there has been a growing recognition of the need for greater understanding and acceptance of LGBTQ+ identities and experiences. One powerful tool to promote this understanding is an LGBTQ+ dictionary. Such a dictionary provides clear definitions and explanations of terms related to gender and sexual identities, helping to educate, foster respect, and create an inclusive environment. This essay will explore the importance of an LGBTQ+ dictionary, the steps involved in creating one, and the considerations necessary to ensure it is comprehensive and inclusive.',
+                style: GoogleFonts.poppins(
+                  fontSize: 13,
+                ),
+                textAlign: TextAlign.justify,
+              ),
+              SizedBox(height: 16),
+              Text(
+                'Importance of an LGBTQ+ Dictionary',
+                style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.justify,
+              ),
+              SizedBox(height: 16),
+              Text(
+                'An LGBTQ+ dictionary is a vital resource for fostering understanding and acceptance. It serves as an educational tool for individuals who may not be familiar with the diverse range of identities and experiences within the LGBTQ+ community. By providing clear and accurate definitions, the dictionary can help dispel myths and misconceptions, reduce prejudice, and promote a more inclusive society. Additionally, it empowers LGBTQ+ individuals by validating their identities and experiences through language.',
+                style: GoogleFonts.poppins(
+                  fontSize: 13,
+                ),
+                textAlign: TextAlign.justify,
+              ),
+              SizedBox(height: 16),
+              Text(
+                'Connection to Sustainable Development Goal 5',
+                style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 16),
+              Text(
+                'Sustainable Development Goal (SDG) 5 aims to achieve gender equality and empower all women and girls. While SDG 5 primarily focuses on eliminating gender-based discrimination and violence, its principles of equality and empowerment are closely aligned with the goals of LGBTQ+ inclusivity. An LGBTQ+ dictionary contributes to SDG 5 by promoting gender equality and inclusivity for all gender identities and sexual orientations. By fostering understanding and acceptance, the dictionary helps to create a more equitable society where everyone, regardless of their gender or sexual identity, can live free from discrimination and violence.',
                 style: GoogleFonts.poppins(
                   fontSize: 13,
                 ),
