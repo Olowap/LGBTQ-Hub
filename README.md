@@ -2,12 +2,9 @@
 
 #OUTPUT
 
-Splashcreen
-
-![Uploading image.png…]()
-
-
 Home
+![image](https://github.com/user-attachments/assets/b8d710b8-05cf-4752-9fcc-dde14442b0ef)
+
 
 
 Pride Dictionary
