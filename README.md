@@ -1,4 +1,5 @@
-- LGBTQHUB is an information System that will allows you to be educated about LGBTQ community.
+# LGBTQHUB
+- is an information System that will allows you to be educated about LGBTQ community.
 
 # OUTPUT
 
@@ -23,10 +24,11 @@ About
 ![image](https://github.com/user-attachments/assets/37b5a3cb-ffcc-4156-a536-ba8abad90f83)
 
 
+# Developers
 
+![image](https://github.com/user-attachments/assets/b0db5ee8-49b9-4448-ab2c-2bdf078ee55f)
 
-
-References: 
+# References: 
 
 https://www.britannica.com/story/why-is-pride-month-celebrated-in-june
 
