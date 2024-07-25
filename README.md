@@ -2,6 +2,11 @@
 
 # OUTPUT
 
+Splashscreen
+
+![image](https://github.com/user-attachments/assets/283fc476-38f2-4f45-8c9f-d8eb608253b3)
+
+
 Home
 
 ![image](https://github.com/user-attachments/assets/3079eb57-da1b-4ea4-b47f-838606ed7344)
@@ -9,6 +14,8 @@ Home
 
 
 Pride Dictionary
+
+![image](https://github.com/user-attachments/assets/924d0d12-2888-4aa6-a37a-c745d0fcfb1d)
 
 
 
