@@ -3,12 +3,12 @@ import 'package:video_player/video_player.dart';
 
 class VideoPlayerWidget extends StatefulWidget {
   final String videoUrl;
-  final ScrollController? scrollController; // Make this nullable
+  final ScrollController? scrollController;
 
   const VideoPlayerWidget({
     Key? key,
     required this.videoUrl,
-    this.scrollController, // Accept nullable ScrollController
+    this.scrollController,
   }) : super(key: key);
 
   @override
@@ -18,6 +18,7 @@ class VideoPlayerWidget extends StatefulWidget {
 class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
   late VideoPlayerController _controller;
   bool _isPlaying = false;
+  bool _showControls = true;
 
   @override
   void initState() {
@@ -25,17 +26,17 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
     _controller = VideoPlayerController.asset(widget.videoUrl)
       ..initialize().then((_) {
         _controller.play();
-        setState(() {});
+        setState(() {
+          _isPlaying = true;
+        });
       });
 
-    // Add listener to the scrollController if it's not null
     widget.scrollController?.addListener(_onScroll);
   }
 
   @override
   void dispose() {
-    widget.scrollController
-        ?.removeListener(_onScroll); // Only remove if not null
+    widget.scrollController?.removeListener(_onScroll);
     _controller.dispose();
     super.dispose();
   }
@@ -63,27 +64,50 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
     });
   }
 
+  void _toggleControls() {
+    setState(() {
+      _showControls = !_showControls;
+    });
+    if (_showControls) {
+      Future.delayed(Duration(seconds: 3), () {
+        setState(() {
+          _showControls = false;
+        });
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        AspectRatio(
-          aspectRatio: _controller.value.aspectRatio,
-          child: _controller.value.isInitialized
-              ? ClipRRect(
-                  borderRadius: BorderRadius.circular(12.0),
-                  child: VideoPlayer(_controller),
-                )
-              : Container(),
-        ),
-        SizedBox(height: 3),
-        IconButton(
-          onPressed: _playPauseVideo,
-          icon: Icon(
-            _isPlaying ? Icons.pause : Icons.play_arrow,
+    return GestureDetector(
+      onTap: _toggleControls,
+      child: Stack(
+        alignment: Alignment.center,
+        children: <Widget>[
+          AspectRatio(
+            aspectRatio: _controller.value.aspectRatio,
+            child: _controller.value.isInitialized
+                ? ClipRRect(
+                    borderRadius: BorderRadius.circular(12.0),
+                    child: VideoPlayer(_controller),
+                  )
+                : Container(),
           ),
-        ),
-      ],
+          if (_showControls)
+            Positioned.fill(
+              child: Center(
+                child: IconButton(
+                  onPressed: _playPauseVideo,
+                  icon: Icon(
+                    _isPlaying ? Icons.pause : Icons.play_arrow,
+                    color: Colors.white,
+                    size: 50.0,
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
     );
   }
 }
