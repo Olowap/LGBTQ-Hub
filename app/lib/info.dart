@@ -51,7 +51,7 @@ class _InfoState extends State<Info> {
       contactNumber: '+63995-428-5872',
       imageUrl: 'Info/aldrin.png',
       bio:
-          'A Third Year College student of Batangas State University Alangilan Campus Batangas City.',
+          'A Third Year College student of Batangas State University Alangilan Campus Batangas City. A student currently studying JavaScript, Python, and CSS. Passionate about web development and programming, I am dedicated to honing my skills in these languages to build dynamic and responsive web applications.',
     ),
     Developer(
       name: 'Juan Paolo Martin V. Ramos',

@@ -163,9 +163,14 @@ class Home extends StatelessWidget {
                           'Why Is Pride Month Celebrated in June?',
                         );
                       },
+                      style: TextButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 227, 222, 222), // Set background color
+                      ),
                       child: Text(
                         'Read More',
-                        style: GoogleFonts.poppins(),
+                        style: GoogleFonts.poppins(
+                          color: Colors.black, // Change the color to black
+                        ),
                       ),
                     ),
                   ],
