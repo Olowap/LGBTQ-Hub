@@ -43,6 +43,11 @@ About
 
 ![image](https://github.com/user-attachments/assets/b0db5ee8-49b9-4448-ab2c-2bdf078ee55f)
 
+Catilo, Joven C. 
+Lingon, Rizabel D. 
+Ramos, Juan Paolo Martin V. 
+Seva, John Aldrin L.
+
 # License
 
 - Credit for Developers
