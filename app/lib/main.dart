@@ -71,20 +71,20 @@ class _BottomNavState extends State<BottomNav> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home), // Default Flutter home icon
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.book),
+            icon: Icon(Icons.book), // Default Flutter book icon
             label: 'Pride Dictionary',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.groups),
+            icon: Icon(Icons.info), // Default Flutter groups icon
             label: 'About',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Color.fromARGB(255, 47, 139, 219),
+        selectedItemColor: Color.fromARGB(255, 15, 15, 15),
         onTap: _onItemTapped,
         selectedLabelStyle: GoogleFonts.poppins(fontWeight: FontWeight.bold),
         unselectedLabelStyle: GoogleFonts.poppins(),
