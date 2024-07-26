@@ -33,17 +33,21 @@ class _InfoState extends State<Info> {
       contactNumber: '+639203549508',
       imageUrl: 'Info/Joven.jpg',
       bio:
-          'A Third Year BS Information Technology Major in Service Management from Batangas State University-TNEU Alangilan Campus. He is passionate in serving the community and charity works. He also plays as Middle Blocker in School, Barangay, and City tournaments. He always believes that "Everything happens for a reason."',
+          'A Third Year BS Information Technology Major in Service Management from Batangas State University-TNEU Alangilan Campus. He is passionate in serving the community and charity works. He also plays as Middle Blocker in School, Barangay, and City tournaments. He always believes that "Everything happens for a reason."\n\n'
+          'I\'m Gay and I\'m agree to SOGIE EQUALITY BILL.',
     ),
-    Developer(
-      name: 'Rizabel D. Lingon',
-      age: 21,
-      location: 'Sitio Dumuclay Ibaba, Batangas City',
-      contactNumber: '+639561334540',
-      imageUrl: 'Info/Riza.png',
-      bio:
-          'A Third Year College student of Batangas State University Alangilan Campus Batangas City.',
+   Developer(
+  name: 'Rizabel D. Lingon',
+  age: 21,
+  location: 'Sitio Dumuclay Ibaba, Batangas City',
+  contactNumber: '+639561334540',
+  imageUrl: 'Info/Riza.png',
+  bio:
+      'I\'m an application developer and UI designer with a passion for crafting user-friendly and visually appealing interfaces. I take pride in my friendly nature and dedication to my work, always striving to complete tasks efficiently and with a high level of quality. Whether I\'m coding a new feature or designing a sleek interface, I love turning ideas into reality and creating experiences that users enjoy.I am a Third Year College student of Batangas State University Alangilan Campus Batangas City.\n\n'
+      'I\'m an Ally and I\'m agree to SOGIE EQUALITY BILL.\n\n',
     ),
+    
+
     Developer(
       name: 'John Aldrin L. Seva',
       age: 21,
@@ -51,7 +55,8 @@ class _InfoState extends State<Info> {
       contactNumber: '+63995-428-5872',
       imageUrl: 'Info/aldrin.png',
       bio:
-          'A Third Year College student of Batangas State University Alangilan Campus Batangas City. A student currently studying JavaScript, Python, and CSS. Passionate about web development and programming, I am dedicated to honing my skills in these languages to build dynamic and responsive web applications.',
+          'A Third Year College student of Batangas State University Alangilan Campus Batangas City. A student currently studying JavaScript, Python, and CSS. Passionate about web development and programming, I am dedicated to honing my skills in these languages to build dynamic and responsive web applications.\n\n'
+          'I\'m an Ally and I\'m agree to SOGIE EQUALITY BILL.',
     ),
     Developer(
       name: 'Juan Paolo Martin V. Ramos',
@@ -60,7 +65,8 @@ class _InfoState extends State<Info> {
       contactNumber: '+63997-280-6864',
       imageUrl: 'Info/paolo.jpg',
       bio:
-          'A Third Year College student of Batangas State University Alangilan Campus Batangas City.',
+          'A Third Year College student of Batangas State University Alangilan Campus Batangas City.\n\n'
+          'I\'m an Ally and I\'m agree to SOGIE EQUALITY BILL.',
     ),
   ];
 
