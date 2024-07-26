@@ -11,6 +11,11 @@ Beyond its educational and empowering functions, the dictionary also plays a piv
 
 Ultimately, an LGBTQ+ dictionary is a beacon of knowledge, acceptance, and empowerment. It supports the ongoing effort to create a world where everyone is respected and valued for who they are, regardless of their sexual orientation or gender identity. By providing a reliable and accessible resource, the dictionary contributes to the vision of a society where diversity is celebrated, and every individual can live authentically and with dignity. It’s a small but powerful tool in the journey towards a more understanding and compassionate world.
 
+# PROJECT INFORMATION
+
+- Course: IT331 - Application Development and Emerging Technologies
+- Course Facilitator: Fatima Marie Agdon
+
 # OUTPUT
 
 Splashscreen
@@ -43,13 +48,13 @@ About
 
 ![image](https://github.com/user-attachments/assets/b0db5ee8-49b9-4448-ab2c-2bdf078ee55f)
 
-Catilo, Joven C. 
+Catilo, Joven C.  | jovencatilo03@gmail.com
 
-Lingon, Rizabel D. 
+Lingon, Rizabel D. | rlingon79@gmail.com
 
-Ramos, Juan Paolo Martin V. 
+Ramos, Juan Paolo Martin V. | 
 
-Seva, John Aldrin L.
+Seva, John Aldrin L. |
 
 # License
 
