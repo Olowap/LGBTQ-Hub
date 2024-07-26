@@ -24,28 +24,26 @@ class Home extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                          'Be PROUD. Be YOU',
-                          style: GoogleFonts.poppins(
-                            fontSize: MediaQuery.of(context).size.width * 0.08,
-                            fontWeight: FontWeight.bold,
-                            foreground: Paint()
-                              ..shader = LinearGradient(
-                                colors: <Color>[
-                                  Colors.red,
-                                  Colors.orange,
-                                  Colors.yellow,
-                                  Colors.green,
-                                  Colors.blue,
-                                  Colors.indigo,
-                                  Colors.purple,
-                                  Colors.red,
-                                ],
-                              ).createShader(
-                                  Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-
+                'Be PROUD. Be YOU',
+                style: GoogleFonts.poppins(
+                  fontSize: MediaQuery.of(context).size.width * 0.08,
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()
+                    ..shader = LinearGradient(
+                      colors: <Color>[
+                        Colors.red,
+                        Colors.orange,
+                        Colors.yellow,
+                        Colors.green,
+                        Colors.blue,
+                        Colors.indigo,
+                        Colors.purple,
+                        Colors.red,
+                      ],
+                    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 15),
               Stack(
                 alignment: Alignment.topCenter,

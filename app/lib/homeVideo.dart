@@ -3,8 +3,13 @@ import 'package:video_player/video_player.dart';
 
 class VideoPlayerWidget extends StatefulWidget {
   final String videoUrl;
+  final ScrollController? scrollController; // Make this nullable
 
-  const VideoPlayerWidget({Key? key, required this.videoUrl}) : super(key: key);
+  const VideoPlayerWidget({
+    Key? key,
+    required this.videoUrl,
+    this.scrollController, // Accept nullable ScrollController
+  }) : super(key: key);
 
   @override
   _VideoPlayerWidgetState createState() => _VideoPlayerWidgetState();
@@ -22,12 +27,29 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
         _controller.play();
         setState(() {});
       });
+
+    // Add listener to the scrollController if it's not null
+    widget.scrollController?.addListener(_onScroll);
   }
 
   @override
   void dispose() {
+    widget.scrollController
+        ?.removeListener(_onScroll); // Only remove if not null
     _controller.dispose();
     super.dispose();
+  }
+
+  void _onScroll() {
+    if (widget.scrollController?.hasClients ?? false) {
+      final isScrolling = widget.scrollController!.offset > 0;
+      if (isScrolling && _controller.value.isPlaying) {
+        _controller.pause();
+        setState(() {
+          _isPlaying = false;
+        });
+      }
+    }
   }
 
   void _playPauseVideo() {
